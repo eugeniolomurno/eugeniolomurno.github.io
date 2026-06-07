@@ -1,0 +1,124 @@
+{
+  "_comment": "Modifica questo file per aggiornare il sito. Poi chiedi a Claude di rigenerare index.html. I campi sotto 'shared' valgono per entrambe le lingue; i campi sotto 'en' e 'it' sono testi tradotti. L'HTML usa data-i18n per la traduzione e parte sempre in inglese.",
+
+  "settings": {
+    "defaultLang": "en",
+    "defaultTheme": "light"
+  },
+
+  "shared": {
+    "name": "Eugenio Lomurno",
+    "photo": "photo.jpg",
+    "cvFile": "CV_Eugenio_Lomurno.pdf",
+    "email": "eugenio.lomurno@polimi.it",
+    "copyrightName": "Eugenio Lomurno",
+    "links": [
+      { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it", "type": "link" },
+      { "label": "Scopus", "url": "https://www.scopus.com/authid/detail.uri?authorId=57226274677", "type": "link" },
+      { "label": "ORCID", "url": "https://orcid.org/0000-0003-4007-3207", "type": "link" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/eugenio-lomurno-a28b12162/", "type": "link" },
+      { "label": "Instagram", "url": "https://www.instagram.com/tacchinoleso/", "type": "link" },
+      { "label": "Download CV", "url": "CV_Eugenio_Lomurno.pdf", "type": "cv" }
+    ],
+    "metrics": [
+      { "value": "12 / 8", "valueType": "static" },
+      { "value": "310", "valueType": "count", "suffix": "+" },
+      { "value": "20", "valueType": "count", "suffix": "" }
+    ],
+    "publications": [
+      {
+        "type": "journal",
+        "title": "Federated Knowledge Recycling: Privacy-Preserving Synthetic Data Sharing",
+        "venue": "E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025"
+      },
+      {
+        "type": "journal",
+        "title": "Synthetic Image Learning: Preserving Performance and Preventing Membership Inference Attacks",
+        "venue": "E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025"
+      },
+      {
+        "type": "conf",
+        "title": "Stable Diffusion Dataset Generation for Downstream Classification Tasks",
+        "venue": "E. Lomurno, M. D’Oria, M. Matteucci · ESANN, 2024"
+      },
+      {
+        "type": "conf",
+        "title": "Discriminative Adversarial Privacy: Balancing Accuracy and Membership Privacy in Neural Networks",
+        "venue": "E. Lomurno, F. Ausonio, A. Archetti, M. Matteucci · BMVC, 2023"
+      },
+      {
+        "type": "conf",
+        "title": "SGDE: Secure Generative Data Exchange for Cross-Silo Federated Learning",
+        "venue": "E. Lomurno et al. · AIPR, 2022"
+      }
+    ],
+    "scholarUrl": "https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it",
+    "thesisUrl": "https://www.politesi.polimi.it/handle/10589/238117"
+  },
+
+  "en": {
+    "role": "Postdoctoral Fellow · AIRLab, DEIB, Politecnico di Milano",
+    "cvbtn": "↓ Download CV",
+    "h_about": "About",
+    "about1": "I am a postdoctoral fellow in the AIRLab group at the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, where I completed my PhD in Information Technology <em>cum laude</em> in 2025. Today my research develops along three connected directions:",
+    "themes": "<li><strong>Privacy through synthetic data</strong> and their secure sharing — training and exchanging models without ever exposing the people behind the data.</li><li><strong>Synthetic data that surpass real data</strong> — generating data that are not merely a safe substitute, but more useful and informative for the AI models that learn from them.</li><li><strong>A European, Human-Centered vision of AI</strong> — advancing it as a constructive counterpoint to the prevailing American and Chinese approaches.</li>",
+    "about2": "My research has been carried out within the H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> and <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> projects and the PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a> project, and continues today — in the Lombardy-funded <em>PREDICT</em> project — with cutting-edge generative techniques for synthesising medical-imaging data of rare tumours. I am also part of the <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), a joint research centre of EssilorLuxottica and Politecnico di Milano devoted to next-generation smart eyewear.",
+    "chip1": "Privacy-Preserving Deep Learning",
+    "chip2": "Synthetic Data Generation",
+    "chip3": "Generative Models",
+    "chip4": "Federated Learning",
+    "chip5": "Human-Centered AI",
+    "h_glance": "At a glance",
+    "m_h": "h-index<br>(Scholar / Scopus)",
+    "m_c": "citations<br>(Google Scholar)",
+    "m_t": "M.Sc. theses<br>(co-)supervised",
+    "h_high": "Highlights",
+    "award1": "<strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.",
+    "award2": "<strong>PhD awarded <em>cum laude</em></strong> — Politecnico di Milano, 2025.",
+    "h_thesis": "PhD Thesis",
+    "thesis_title": "Adversarial and Generative Deep Learning for Data Privacy in Human-Centered Artificial Intelligence",
+    "thesis_meta": "Politecnico di Milano, 2025 (cum laude). Supervisor: Prof. Matteo Matteucci.",
+    "thesis_link": "Read on POLITesi →",
+    "h_pubs": "Selected Publications",
+    "tag_j": "Journal",
+    "tag_c": "Conf.",
+    "pubs_all": "Full publication list on Google Scholar →",
+    "h_contact": "Contact",
+    "contact_p": "If these topics resonate with you — for a discussion or a collaboration, in academia as well as with companies and organisations — I’d be glad to hear from you.",
+    "email_btn": "✉ Email me",
+    "loc": "Milano, Italy"
+  },
+
+  "it": {
+    "role": "Assegnista di ricerca · AIRLab, DEIB, Politecnico di Milano",
+    "cvbtn": "↓ Scarica il CV",
+    "h_about": "Chi sono",
+    "about1": "Sono assegnista di ricerca nel gruppo AIRLab del Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB) del Politecnico di Milano, dove nel 2025 ho conseguito il dottorato in Information Technology <em>con lode</em>. Oggi la mia ricerca si sviluppa lungo tre direzioni connesse:",
+    "themes": "<li><strong>La privacy attraverso i dati sintetici</strong> e la loro condivisione sicura — addestrare e scambiare modelli senza mai esporre le persone dietro ai dati.</li><li><strong>Dati sintetici migliori dei dati reali</strong> — generare dati che non siano solo un sostituto sicuro, ma più utili e informativi per i modelli di IA che li apprendono.</li><li><strong>Una visione europea e Human-Centered dell’IA</strong> — portarla avanti come contrappunto costruttivo agli approcci statunitense e cinese.</li>",
+    "about2": "La mia ricerca si è svolta nei progetti H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> e <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> e nel progetto PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a>, e prosegue oggi — nel progetto <em>PREDICT</em> finanziato da Regione Lombardia — con tecniche generative all’avanguardia per sintetizzare immagini mediche di tumori rari. Faccio inoltre parte dello <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), centro di ricerca congiunto di EssilorLuxottica e Politecnico di Milano dedicato agli occhiali intelligenti di nuova generazione.",
+    "chip1": "Deep Learning per la Privacy",
+    "chip2": "Generazione di Dati Sintetici",
+    "chip3": "Modelli Generativi",
+    "chip4": "Federated Learning",
+    "chip5": "IA Centrata sull’Uomo",
+    "h_glance": "In sintesi",
+    "m_h": "h-index<br>(Scholar / Scopus)",
+    "m_c": "citazioni<br>(Google Scholar)",
+    "m_t": "tesi magistrali<br>(co-)seguite",
+    "h_high": "Riconoscimenti",
+    "award1": "<strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.",
+    "award2": "<strong>Dottorato conseguito <em>con lode</em></strong> — Politecnico di Milano, 2025.",
+    "h_thesis": "Tesi di dottorato",
+    "thesis_title": "Adversarial and Generative Deep Learning for Data Privacy in Human-Centered Artificial Intelligence",
+    "thesis_meta": "Politecnico di Milano, 2025 (con lode). Relatore: Prof. Matteo Matteucci.",
+    "thesis_link": "Leggi su POLITesi →",
+    "h_pubs": "Pubblicazioni selezionate",
+    "tag_j": "Rivista",
+    "tag_c": "Conf.",
+    "pubs_all": "Elenco completo su Google Scholar →",
+    "h_contact": "Contatti",
+    "contact_p": "Se questi temi ti interessano — per un confronto o una collaborazione, nel mondo della ricerca così come con aziende e imprese — sarò felice di sentirti.",
+    "email_btn": "✉ Scrivimi",
+    "loc": "Milano, Italia"
+  }
+}
