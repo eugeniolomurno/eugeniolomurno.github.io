@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eugenio Lomurno — Postdoctoral Fellow, Politecnico di Milano</title>
+<meta name="description" content="Eugenio Lomurno — Postdoctoral Fellow at AIRLab, DEIB, Politecnico di Milano. Privacy-preserving deep learning, synthetic data, generative models, federated learning.">
+<script>(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#faf9f5; --fg:#2b2926; --muted:#857c70; --card:#f3eee4; --line:#ece5d8;
+         --accent:#c96442; --accent-soft:#f6e7dd; --chip:#efe9dd; }
+  html[data-theme="dark"]{ --bg:#262420; --fg:#ece6dd; --muted:#a79e91; --card:#2f2b25;
+         --line:#3a352d; --accent:#e08a66; --accent-soft:#392e27; --chip:#322d26; }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Roboto',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:300;
+       background:var(--bg);color:var(--fg);line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
+  .controls{position:fixed;top:18px;right:18px;z-index:30;display:flex;gap:10px;align-items:center}
+  .tbtn .lbl{font-size:12px;font-weight:500;letter-spacing:.04em}
+  .spin{animation:spin .45s ease}
+  @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+  .tbtn{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);
+        background:var(--card);color:var(--fg);cursor:pointer;transition:.15s}
+  .tbtn:hover{border-color:var(--accent);color:var(--accent)}
+  .ic-sun{display:none} html[data-theme="dark"] .ic-moon{display:none} html[data-theme="dark"] .ic-sun{display:block}
+  header{padding:72px 0 30px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .avatar{width:116px;height:116px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+          background:linear-gradient(135deg,var(--accent),#e8b59c);color:#fff;font-size:40px;font-weight:500;overflow:hidden}
+  .avatar img{width:100%;height:100%;object-fit:cover}
+  h1{font-size:33px;font-weight:700;margin:0 0 4px;letter-spacing:-.01em}
+  .role{color:var(--muted);font-size:17px;font-weight:400;margin:0 0 14px}
+  .links{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .links a{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border:1px solid var(--line);
+           border-radius:999px;font-size:14px;font-weight:400;color:var(--fg);background:var(--card);transition:.15s}
+  .links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;background:var(--accent-soft)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:999px;background:var(--accent);
+       color:#fff;font-weight:500;font-size:14px;border:1px solid var(--accent)}
+  .btn:hover{text-decoration:none;opacity:.92}
+  section{padding:30px 0;border-top:1px solid var(--line)}
+  h2{font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 16px}
+  p{margin:0 0 14px} strong{font-weight:500}
+  .themes{margin:4px 0 16px;padding-left:20px} .themes li{margin:0 0 9px;font-weight:300}
+  .themes li strong{font-weight:500;color:var(--fg)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .chip{background:var(--chip);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:400;color:var(--muted)}
+  .metrics{display:flex;flex-wrap:wrap;gap:14px;margin-top:4px}
+  .metric{background:var(--card);border-radius:16px;padding:18px 20px;flex:1 1 160px;min-width:160px}
+  .metric b{display:block;font-size:26px;font-weight:700;color:var(--accent)}
+  .metric span{font-size:13px;color:var(--muted)}
+  .pub{padding:13px 0;border-bottom:1px solid var(--line)} .pub:last-child{border-bottom:none}
+  .pub .t{font-weight:500} .pub .v{color:var(--muted);font-size:14px}
+  .tag{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.05em;padding:2px 9px;border-radius:999px;margin-right:8px;vertical-align:middle}
+  .tag.j{background:var(--accent-soft);color:var(--accent)} .tag.c{background:var(--chip);color:var(--muted)}
+  .award{display:flex;gap:10px;margin-bottom:10px} .award .dot{color:var(--accent)}
+  footer{padding:30px 0 70px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);
+         display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+  @media(max-width:560px){ header{padding-top:60px} h1{font-size:27px} .avatar{width:92px;height:92px;font-size:32px} }
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <button class="tbtn" id="langBtn" aria-label="Switch language (EN / IT)"><span class="lbl" id="langLbl">IT</span></button>
+  <button class="tbtn" id="themeBtn" aria-label="Toggle dark / light theme">
+    <svg class="ic-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="ic-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+</div>
+
+<div class="wrap">
+  <header>
+    <!-- For a photo: replace the EL block with <img src="photo.jpg" alt="Eugenio Lomurno"> -->
+    <div class="avatar">EL</div>
+    <div>
+      <h1>Eugenio Lomurno</h1>
+      <p class="role" data-i18n="role">Postdoctoral Fellow · AIRLab, DEIB, Politecnico di Milano</p>
+      <div class="links">
+        <a href="https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57226274677" target="_blank" rel="noopener">Scopus</a>
+        <a href="https://orcid.org/0000-0003-4007-3207" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://www.linkedin.com/in/eugenio-lomurno-a28b12162/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="CV_Eugenio_Lomurno.pdf" download data-i18n="cvbtn">↓ Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2 data-i18n="h_about">About</h2>
+    <p data-i18n="about1">I am a postdoctoral fellow in the AIRLab group at the Department of Electronics, Information and
+       Bioengineering (DEIB), Politecnico di Milano, where I completed my PhD in Information Technology
+       <em>cum laude</em> in 2025. Today my research develops along three connected directions:</p>
+    <ul class="themes" data-i18n="themes">
+      <li><strong>Privacy through synthetic data</strong> and their secure sharing — training and exchanging models without ever exposing the people behind the data.</li>
+      <li><strong>Synthetic data that surpass real data</strong> — generating data that are not merely a safe substitute, but more useful and informative for the AI models that learn from them.</li>
+      <li><strong>A European, Human-Centered vision of AI</strong> — advancing it as a constructive counterpoint to the prevailing American and Chinese approaches.</li>
+    </ul>
+    <p data-i18n="about2">My research has been carried out within the H2020 <a href="https://doi.org/10.3030/101016112" target="_blank" rel="noopener">ESSENCE</a> and <a href="https://cordis.europa.eu/project/id/101016577" target="_blank" rel="noopener">AI-SPRINT</a> projects and the PNRR <a href="https://fondazione-fair.it/" target="_blank" rel="noopener">FAIR</a> project, and continues today — in the Lombardy-funded <em>PREDICT</em> project — with cutting-edge generative techniques for synthesising medical-imaging data of rare tumours. I am also part of the <a href="https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/" target="_blank" rel="noopener">SEL</a> (Smart Eyewear Lab), a joint research centre of EssilorLuxottica and Politecnico di Milano devoted to next-generation smart eyewear.</p>
+    <div class="chips">
+      <span class="chip" data-i18n="chip1">Privacy-Preserving Deep Learning</span>
+      <span class="chip" data-i18n="chip2">Synthetic Data Generation</span>
+      <span class="chip" data-i18n="chip3">Generative Models</span>
+      <span class="chip" data-i18n="chip4">Federated Learning</span>
+      <span class="chip" data-i18n="chip5">Human-Centered AI</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="h_glance">At a glance</h2>
+    <div class="metrics">
+      <div class="metric"><b>12 / 8</b><span data-i18n="m_h">h-index<br>(Scholar / Scopus)</span></div>
+      <div class="metric"><b data-count="310" data-suffix="+">0</b><span data-i18n="m_c">citations<br>(Google Scholar)</span></div>
+      <div class="metric"><b data-count="20">0</b><span data-i18n="m_t">M.Sc. theses<br>(co-)supervised</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="h_high">Highlights</h2>
+    <div class="award"><span class="dot">★</span><div data-i18n="award1"><strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.</div></div>
+    <div class="award"><span class="dot">★</span><div data-i18n="award2"><strong>PhD awarded <em>cum laude</em></strong> — Politecnico di Milano, 2025.</div></div>
+  </section>
+
+  <section>
+    <h2 data-i18n="h_thesis">PhD Thesis</h2>
+    <p class="pub"><span class="t">Adversarial and Generative Deep Learning for Data Privacy in Human-Centered Artificial Intelligence</span><br>
+       <span class="v" data-i18n="thesis_meta">Politecnico di Milano, 2025 (cum laude). Supervisor: Prof. Matteo Matteucci.</span><br>
+       <a href="https://www.politesi.polimi.it/handle/10589/238117" target="_blank" rel="noopener" data-i18n="thesis_link">Read on POLITesi →</a></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="h_pubs">Selected Publications</h2>
+    <div class="pub"><span class="tag j" data-i18n="tag_j">Journal</span><span class="t">Federated Knowledge Recycling: Privacy-Preserving Synthetic Data Sharing</span><br><span class="v">E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025</span></div>
+    <div class="pub"><span class="tag j" data-i18n="tag_j">Journal</span><span class="t">Synthetic Image Learning: Preserving Performance and Preventing Membership Inference Attacks</span><br><span class="v">E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025</span></div>
+    <div class="pub"><span class="tag c" data-i18n="tag_c">Conf.</span><span class="t">Stable Diffusion Dataset Generation for Downstream Classification Tasks</span><br><span class="v">E. Lomurno, M. D’Oria, M. Matteucci · ESANN, 2024</span></div>
+    <div class="pub"><span class="tag c" data-i18n="tag_c">Conf.</span><span class="t">Discriminative Adversarial Privacy: Balancing Accuracy and Membership Privacy in Neural Networks</span><br><span class="v">E. Lomurno, F. Ausonio, A. Archetti, M. Matteucci · BMVC, 2023</span></div>
+    <div class="pub"><span class="tag c" data-i18n="tag_c">Conf.</span><span class="t">SGDE: Secure Generative Data Exchange for Cross-Silo Federated Learning</span><br><span class="v">E. Lomurno et al. · AIPR, 2022</span></div>
+    <p style="margin-top:16px"><a href="https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it" target="_blank" rel="noopener" data-i18n="pubs_all">Full publication list on Google Scholar →</a></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="h_contact">Contact</h2>
+    <p data-i18n="contact_p">Interested in privacy-preserving or generative AI, a collaboration, or supervising a thesis? I’d be happy to hear from you.</p>
+    <a class="btn" href="mailto:eugenio.lomurno@polimi.it?subject=Contact%20from%20your%20website" data-i18n="email_btn">✉ Email me</a>
+  </section>
+
+  <footer>
+    <span data-i18n="loc">Milano, Italy</span><span>·</span>
+    <a href="mailto:eugenio.lomurno@polimi.it">eugenio.lomurno@polimi.it</a><span>·</span>
+    <span>© <span id="y"></span> Eugenio Lomurno</span>
+  </footer>
+</div>
+
+<script>
+  var I18N={
+    en:{
+      role:"Postdoctoral Fellow · AIRLab, DEIB, Politecnico di Milano",
+      cvbtn:"↓ Download CV",
+      h_about:"About",
+      about1:"I am a postdoctoral fellow in the AIRLab group at the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, where I completed my PhD in Information Technology <em>cum laude</em> in 2025. Today my research develops along three connected directions:",
+      themes:"<li><strong>Privacy through synthetic data</strong> and their secure sharing — training and exchanging models without ever exposing the people behind the data.</li><li><strong>Synthetic data that surpass real data</strong> — generating data that are not merely a safe substitute, but more useful and informative for the AI models that learn from them.</li><li><strong>A European, Human-Centered vision of AI</strong> — advancing it as a constructive counterpoint to the prevailing American and Chinese approaches.</li>",
+      about2:"My research has been carried out within the H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> and <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> projects and the PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a> project, and continues today — in the Lombardy-funded <em>PREDICT</em> project — with cutting-edge generative techniques for synthesising medical-imaging data of rare tumours. I am also part of the <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), a joint research centre of EssilorLuxottica and Politecnico di Milano devoted to next-generation smart eyewear.",
+      chip1:"Privacy-Preserving Deep Learning", chip2:"Synthetic Data Generation", chip3:"Generative Models", chip4:"Federated Learning", chip5:"Human-Centered AI",
+      h_glance:"At a glance",
+      m_h:"h-index<br>(Scholar / Scopus)", m_c:"citations<br>(Google Scholar)", m_t:"M.Sc. theses<br>(co-)supervised",
+      h_high:"Highlights",
+      award1:"<strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.",
+      award2:"<strong>PhD awarded <em>cum laude</em></strong> — Politecnico di Milano, 2025.",
+      h_thesis:"PhD Thesis",
+      thesis_meta:"Politecnico di Milano, 2025 (cum laude). Supervisor: Prof. Matteo Matteucci.",
+      thesis_link:"Read on POLITesi →",
+      h_pubs:"Selected Publications", tag_j:"Journal", tag_c:"Conf.",
+      pubs_all:"Full publication list on Google Scholar →",
+      h_contact:"Contact",
+      contact_p:"If these topics resonate with you — for a discussion or a collaboration, in academia as well as with companies and organisations — I’d be glad to hear from you.",
+      email_btn:"✉ Email me",
+      loc:"Milano, Italy"
+    },
+    it:{
+      role:"Assegnista di ricerca · AIRLab, DEIB, Politecnico di Milano",
+      cvbtn:"↓ Scarica il CV",
+      h_about:"Chi sono",
+      about1:"Sono assegnista di ricerca nel gruppo AIRLab del Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB) del Politecnico di Milano, dove nel 2025 ho conseguito il dottorato in Information Technology <em>con lode</em>. Oggi la mia ricerca si sviluppa lungo tre direzioni connesse:",
+      themes:"<li><strong>La privacy attraverso i dati sintetici</strong> e la loro condivisione sicura — addestrare e scambiare modelli senza mai esporre le persone dietro ai dati.</li><li><strong>Dati sintetici migliori dei dati reali</strong> — generare dati che non siano solo un sostituto sicuro, ma più utili e informativi per i modelli di IA che li apprendono.</li><li><strong>Una visione europea e Human-Centered dell’IA</strong> — portarla avanti come contrappunto costruttivo agli approcci statunitense e cinese.</li>",
+      about2:"La mia ricerca si è svolta nei progetti H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> e <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> e nel progetto PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a>, e prosegue oggi — nel progetto <em>PREDICT</em> finanziato da Regione Lombardia — con tecniche generative all’avanguardia per sintetizzare immagini mediche di tumori rari. Faccio inoltre parte dello <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), centro di ricerca congiunto di EssilorLuxottica e Politecnico di Milano dedicato agli occhiali intelligenti di nuova generazione.",
+      chip1:"Deep Learning per la Privacy", chip2:"Generazione di Dati Sintetici", chip3:"Modelli Generativi", chip4:"Federated Learning", chip5:"IA Centrata sull’Uomo",
+      h_glance:"In sintesi",
+      m_h:"h-index<br>(Scholar / Scopus)", m_c:"citazioni<br>(Google Scholar)", m_t:"tesi magistrali<br>(co-)seguite",
+      h_high:"Riconoscimenti",
+      award1:"<strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.",
+      award2:"<strong>Dottorato conseguito <em>con lode</em></strong> — Politecnico di Milano, 2025.",
+      h_thesis:"Tesi di dottorato",
+      thesis_meta:"Politecnico di Milano, 2025 (con lode). Relatore: Prof. Matteo Matteucci.",
+      thesis_link:"Leggi su POLITesi →",
+      h_pubs:"Pubblicazioni selezionate", tag_j:"Rivista", tag_c:"Conf.",
+      pubs_all:"Elenco completo su Google Scholar →",
+      h_contact:"Contatti",
+      contact_p:"Se questi temi ti interessano — per un confronto o una collaborazione, nel mondo della ricerca così come con aziende e imprese — sarò felice di sentirti.",
+      email_btn:"✉ Scrivimi",
+      loc:"Milano, Italia"
+    }
+  };
+  function applyLang(l){
+    if(!I18N[l]) l='en';
+    document.documentElement.setAttribute('lang',l);
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k=el.getAttribute('data-i18n'); if(I18N[l][k]!=null) el.innerHTML=I18N[l][k];
+    });
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  function setLangLabel(){var l=document.documentElement.getAttribute('lang');document.getElementById('langLbl').textContent=(l==='en'?'IT':'EN');}
+  var langBtn=document.getElementById('langBtn');
+  langBtn.addEventListener('click',function(){
+    var cur=document.documentElement.getAttribute('lang');
+    applyLang(cur==='en'?'it':'en'); setLangLabel();
+    langBtn.classList.remove('spin'); void langBtn.offsetWidth; langBtn.classList.add('spin');
+  });
+  langBtn.addEventListener('animationend',function(){langBtn.classList.remove('spin');});
+  var startLang='en'; try{startLang=localStorage.getItem('lang')||'en';}catch(e){}
+  applyLang(startLang); setLangLabel();
+
+  document.getElementById('y').textContent=new Date().getFullYear();
+  document.getElementById('themeBtn').addEventListener('click',function(){
+    var cur=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+    document.documentElement.setAttribute('data-theme',cur);
+    try{localStorage.setItem('theme',cur)}catch(e){}
+  });
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var target=+el.getAttribute('data-count'), suf=el.getAttribute('data-suffix')||'';
+    var n=0, step=Math.max(1,Math.ceil(target/45));
+    var id=setInterval(function(){ n+=step; if(n>=target){n=target;clearInterval(id);} el.textContent=n+suf; },22);
+  });
+</script>
+</body>
+</html>
