@@ -29,27 +29,32 @@
       {
         "type": "journal",
         "title": "Federated Knowledge Recycling: Privacy-Preserving Synthetic Data Sharing",
-        "venue": "E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025"
+        "venue": "E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025",
+        "url": "https://doi.org/10.1016/j.patrec.2025.02.030"
       },
       {
         "type": "journal",
         "title": "Synthetic Image Learning: Preserving Performance and Preventing Membership Inference Attacks",
-        "venue": "E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025"
+        "venue": "E. Lomurno, M. Matteucci · Pattern Recognition Letters, 2025",
+        "url": "https://doi.org/10.1016/j.patrec.2025.02.003"
       },
       {
         "type": "conf",
         "title": "Stable Diffusion Dataset Generation for Downstream Classification Tasks",
-        "venue": "E. Lomurno, M. D’Oria, M. Matteucci · ESANN, 2024"
+        "venue": "E. Lomurno, M. D’Oria, M. Matteucci · ESANN, 2024",
+        "url": "https://dx.doi.org/10.14428/esann/2024.ES2024-100"
       },
       {
         "type": "conf",
         "title": "Discriminative Adversarial Privacy: Balancing Accuracy and Membership Privacy in Neural Networks",
-        "venue": "E. Lomurno, F. Ausonio, A. Archetti, M. Matteucci · BMVC, 2023"
+        "venue": "E. Lomurno, F. Ausonio, A. Archetti, M. Matteucci · BMVC, 2023",
+        "url": "https://proceedings.bmvc2023.org/799"
       },
       {
         "type": "conf",
         "title": "SGDE: Secure Generative Data Exchange for Cross-Silo Federated Learning",
-        "venue": "E. Lomurno et al. · AIPR, 2022"
+        "venue": "E. Lomurno et al. · AIPR, 2022",
+        "url": "https://doi.org/10.1145/3573942.3573974"
       }
     ],
     "scholarUrl": "https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it",
