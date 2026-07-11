@@ -113,11 +113,11 @@
   <section>
     <h2 data-i18n="h_glance">At a glance</h2>
     <div class="metrics">
-      <div class="metric"><b>12 / 8</b><span data-i18n="m_h">h-index<br>(Scholar / Scopus)</span></div>
+      <div class="metric"><b data-count-dual="12 / 8">0 / 0</b><span data-i18n="m_h">h-index<br>(Scholar / Scopus)</span></div>
       <div class="metric"><b data-count="330" data-suffix="+">0</b><span data-i18n="m_c">Citations<br>(Google Scholar)</span></div>
       <div class="metric"><b data-count="30">0</b><span data-i18n="m_p">Publications<br>(13 A+ / Q1)</span></div>
       <div class="metric"><b data-count="5">0</b><span data-i18n="m_pr">Research projects<br>& JRP</span></div>
-      <div class="metric"><b>5 / 8</b><span data-i18n="m_co">Courses<br>(University / Corporate)</span></div>
+      <div class="metric"><b data-count-dual="5 / 8">0 / 0</b><span data-i18n="m_co">Courses<br>(University / Corporate)</span></div>
       <div class="metric"><b data-count="20">0</b><span data-i18n="m_t">M.Sc. theses<br>(co-)supervised</span></div>
     </div>
   </section>
@@ -235,6 +235,17 @@
     var target=+el.getAttribute('data-count'), suf=el.getAttribute('data-suffix')||'';
     var n=0, step=Math.max(1,Math.ceil(target/45));
     var id=setInterval(function(){ n+=step; if(n>=target){n=target;clearInterval(id);} el.textContent=n+suf; },22);
+  });
+  document.querySelectorAll('[data-count-dual]').forEach(function(el){
+    var p=el.getAttribute('data-count-dual').split('/');
+    var t1=+p[0], t2=+p[1];
+    var n1=0, n2=0, s1=Math.max(1,Math.ceil(t1/45)), s2=Math.max(1,Math.ceil(t2/45));
+    var id=setInterval(function(){
+      n1+=s1; if(n1>t1)n1=t1;
+      n2+=s2; if(n2>t2)n2=t2;
+      el.textContent=n1+' / '+n2;
+      if(n1>=t1&&n2>=t2)clearInterval(id);
+    },22);
   });
 </script>
 </body>

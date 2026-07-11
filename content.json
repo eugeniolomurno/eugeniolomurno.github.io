@@ -21,11 +21,11 @@
       { "label": "Download CV", "url": "CV_Eugenio_Lomurno.pdf", "type": "cv" }
     ],
     "metrics": [
-      { "value": "12 / 8", "valueType": "static" },
+      { "value": "12 / 8", "valueType": "countDual" },
       { "value": "330", "valueType": "count", "suffix": "+" },
       { "value": "30", "valueType": "count", "suffix": "" },
       { "value": "5", "valueType": "count", "suffix": "" },
-      { "value": "5 / 8", "valueType": "static" },
+      { "value": "5 / 8", "valueType": "countDual" },
       { "value": "20", "valueType": "count", "suffix": "" }
     ],
     "publications": [
