@@ -22,7 +22,7 @@
     ],
     "metrics": [
       { "value": "12 / 8", "valueType": "static" },
-      { "value": "310", "valueType": "count", "suffix": "+" },
+      { "value": "330", "valueType": "count", "suffix": "+" },
       { "value": "20", "valueType": "count", "suffix": "" }
     ],
     "publications": [
