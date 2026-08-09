@@ -3,250 +3,557 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Eugenio Lomurno — Postdoctoral Fellow at AIRLab, DEIB, Politecnico di Milano. Generative and privacy-preserving deep learning, synthetic data, multimodal learning, edge-oriented neural architecture search.">
+<meta name="author" content="Eugenio Lomurno">
+<link rel="canonical" href="https://eugeniolomurno.github.io/">
+
+<!-- anteprime social: LinkedIn, X, Slack, WhatsApp -->
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://eugeniolomurno.github.io/">
+<meta property="og:title" content="Eugenio Lomurno — Postdoctoral Fellow, Politecnico di Milano">
+<meta property="og:description" content="Eugenio Lomurno — Postdoctoral Fellow at AIRLab, DEIB, Politecnico di Milano. Generative and privacy-preserving deep learning, synthetic data, multimodal learning, edge-oriented neural architecture search.">
+<meta property="og:image" content="https://eugeniolomurno.github.io/photo.jpg">
+<meta property="og:image:alt" content="Portrait of Eugenio Lomurno">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="profile:first_name" content="Eugenio">
+<meta property="profile:last_name" content="Lomurno">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Eugenio Lomurno — Postdoctoral Fellow, Politecnico di Milano">
+<meta name="twitter:description" content="Eugenio Lomurno — Postdoctoral Fellow at AIRLab, DEIB, Politecnico di Milano. Generative and privacy-preserving deep learning, synthetic data, multimodal learning, edge-oriented neural architecture search.">
+<meta name="twitter:image" content="https://eugeniolomurno.github.io/photo.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2398461F'/><text x='50' y='71' font-family='Georgia,serif' font-size='56' font-weight='700' fill='%23FFFDF8' text-anchor='middle'>EL</text></svg>">
+
+<!-- dati strutturati: aiuta i motori a legare profilo, ORCID, Scholar e Scopus alla stessa persona -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eugenio Lomurno",
+  "url": "https://eugeniolomurno.github.io/",
+  "image": "https://eugeniolomurno.github.io/photo.jpg",
+  "email": "mailto:eugenio.lomurno@polimi.it",
+  "jobTitle": "Postdoctoral Fellow",
+  "identifier": "https://orcid.org/0000-0003-4007-3207",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "Politecnico di Milano",
+    "department": {"@type": "Organization",
+      "name": "Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB) — AIRLab"}
+  },
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "Politecnico di Milano"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Milano", "addressCountry": "IT"},
+  "knowsAbout": ["Generative Deep Learning","Synthetic Dataset Generation",
+    "Privacy-Preserving Deep Learning","Multimodal Deep Learning",
+    "Neural Architecture Search","Healthcare AI"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=7VpjbGoAAAAJ",
+    "https://www.scopus.com/authid/detail.uri?authorId=57226274677",
+    "https://orcid.org/0000-0003-4007-3207",
+    "https://github.com/eugeniolomurno",
+    "https://www.linkedin.com/in/eugenio-lomurno-a28b12162/"
+  ]
+}
+</script>
 <title>Eugenio Lomurno — Postdoctoral Fellow, Politecnico di Milano</title>
-<meta name="description" content="Eugenio Lomurno — Postdoctoral Fellow at AIRLab, DEIB, Politecnico di Milano. Privacy-preserving deep learning, synthetic data, generative models, federated learning.">
-<script>(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add('js');
+try{var t=localStorage.getItem('el-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+d.setAttribute('data-theme',t);}catch(e){}
+try{var l=localStorage.getItem('el-lang');if(l==='it'||l==='en')d.setAttribute('lang',l);}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@300..700&display=swap" rel="stylesheet">
 <style>
-  :root{ --bg:#faf9f5; --fg:#2b2926; --muted:#857c70; --card:#f3eee4; --line:#d9cfbd;
-         --accent:#c96442; --accent-soft:#f6e7dd; --chip:#efe9dd; }
-  html[data-theme="dark"]{ --bg:#262420; --fg:#ece6dd; --muted:#a79e91; --card:#2f2b25;
-         --line:#3a352d; --accent:#e08a66; --accent-soft:#392e27; --chip:#322d26; }
-  *{box-sizing:border-box} html{scroll-behavior:smooth}
-  body{margin:0;font-family:'Roboto',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:300;
-       background:var(--bg);color:var(--fg);line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
-  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
-  .controls{position:fixed;top:18px;right:18px;z-index:30;display:flex;gap:10px;align-items:center}
-  .tbtn .lbl{font-size:12px;font-weight:500;letter-spacing:.04em}
-  .spin{animation:spin .45s ease}
-  @keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-  .tbtn{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);
-        background:var(--card);color:var(--fg);cursor:pointer;transition:.15s}
-  .tbtn:hover{border-color:var(--accent);color:var(--accent)}
-  .ic-sun{display:none} html[data-theme="dark"] .ic-moon{display:none} html[data-theme="dark"] .ic-sun{display:block}
-  header{padding:72px 0 30px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
-  .avatar{width:116px;height:116px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
-          background:linear-gradient(135deg,var(--accent),#e8b59c);color:#fff;font-size:40px;font-weight:500;overflow:hidden}
-  .avatar img{width:100%;height:100%;object-fit:cover}
-  h1{font-size:33px;font-weight:700;margin:0 0 4px;letter-spacing:-.01em}
-  .role{color:var(--muted);font-size:17px;font-weight:400;margin:0 0 14px}
-  .links{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-  .links a{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border:1px solid var(--line);
-           border-radius:999px;font-size:14px;font-weight:400;color:var(--fg);background:var(--card);transition:.15s}
-  .links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;background:var(--accent-soft)}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:999px;background:var(--accent);
-       color:#fff;font-weight:500;font-size:14px;border:1px solid var(--accent)}
-  .btn:hover{text-decoration:none;opacity:.92}
-  section{padding:30px 0;border-top:1px solid var(--line)}
-  h2{font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 16px}
-  p{margin:0 0 14px} strong{font-weight:500}
-  .themes{margin:4px 0 16px;padding-left:20px} .themes li{margin:0 0 9px;font-weight:300}
-  .themes li strong{font-weight:500;color:var(--fg)}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-  .chip{background:var(--chip);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:400;color:var(--muted)}
-  .metrics{display:flex;flex-wrap:wrap;gap:14px;margin-top:4px}
-  .metric{background:var(--card);border-radius:16px;padding:18px 20px;flex:1 1 200px;min-width:200px}
-  .metric b{display:block;font-size:26px;font-weight:700;color:var(--accent)}
-  .metric span{font-size:13px;color:var(--muted)}
-  .pub{padding:13px 0;border-bottom:1px solid var(--line)} .pub:last-child{border-bottom:none}
-  .pub .t{font-weight:500} .pub .v{color:var(--muted);font-size:14px}
-  .pub .t a{color:var(--fg);transition:color .15s} .pub .t a:hover{color:var(--accent);text-decoration:none}
-  .tag{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.05em;padding:2px 9px;border-radius:999px;margin-right:8px;vertical-align:middle}
-  .tag.j{background:var(--accent-soft);color:var(--accent)} .tag.c{background:var(--chip);color:var(--muted)}
-  .award{display:flex;gap:10px;margin-bottom:10px} .award .dot{color:var(--accent)}
-  footer{padding:30px 0 70px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);
-         display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
-  @media(max-width:560px){ header{padding-top:60px} h1{font-size:27px} .avatar{width:92px;height:92px;font-size:32px} }
+:root{--bg:#FFFDF8;--fg:#17150F;--muted:#4E463B;--card:#F2EADC;--line:#DCCFBB;--accent:#98461F;--accent2:#6F6044;--soft:#F7E5D6;--chip:#EEE4D4}
+html[data-theme="dark"]{--bg:#17150F;--fg:#EDE7DD;--muted:#9C9285;--card:#211E18;--line:#302B23;--accent:#DA8B58;--accent2:#B9A583;--soft:#33261D;--chip:#262119}
+:root{--fd:'Fraunces', Georgia, serif;--fb:'Inter', system-ui, sans-serif;--r:10px}
+
+/* ---------- scala tipografica: pochi gradini, fluidi dove serve ---------- */
+:root{
+  --fs-micro:12.5px;
+  --fs-meta:13.5px;
+  --fs-sec:14.5px;
+  --fs-body:clamp(16px,.3vw + 15.1px,17px);
+  --fs-lede:clamp(16.5px,.46vw + 15.1px,18.5px);
+  --fs-role:clamp(18px,.75vw + 15.6px,21px);
+  --fs-h1:clamp(29px,4.6vw + 8px,46px);
+  --fs-h3:clamp(15.5px,.2vw + 15px,16.5px);
+  --r-sm:5px;                 /* elementi bassi: tag, note */
+  --gap-sec:clamp(44px,5.2vw,64px);   /* 64+64 = 128px fra sezioni, come misurato sul sito di Alberto */
+  --pad-x:clamp(18px,4vw,26px);
+}
+*{box-sizing:border-box}
+/* il fondo sta su html, non su body: cosi la grana puo stare dietro al contenuto
+   ma davanti al fondo, con uno z-index negativo */
+html{scroll-behavior:smooth;scroll-padding-top:72px;background:var(--bg);
+     transition:background .25s}
+/* 400, non 300: il peso sottile perde spessore apparente sui fondi chiari */
+body{margin:0;background:transparent;color:var(--fg);font-family:var(--fb);font-weight:400;
+     font-size:var(--fs-body);line-height:1.62;
+     transition:color .25s}
+/* grana di carta: solo in tema chiaro, fusa in soft-light per non spostare il colore del fondo.
+   Fissa allo schermo: a questa frequenza non si distingue dallo scorrimento e non fa ridisegnare. */
+html[data-theme="light"] body::before{content:"";position:fixed;inset:0;z-index:-1;
+     pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px;
+     opacity:.30;mix-blend-mode:soft-light}
+@media(prefers-reduced-transparency:reduce){html[data-theme="light"] body::before{display:none}}
+/* l'antialiasing assottiglia i glifi: utile solo dove il testo e chiaro su fondo scuro (macOS) */
+html[data-theme="dark"] body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:0 var(--pad-x)}
+
+/* ---------- topbar ---------- */
+.topbar{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 87%,transparent);
+        backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tb-in{max-width:900px;margin:0 auto;padding:0 var(--pad-x);height:56px;display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;color:var(--fg);font-family:var(--fd);
+       font-weight:600;font-size:var(--fs-sec);white-space:nowrap;margin-left:-2px}
+.brand:hover{text-decoration:none;color:var(--fg)}
+.brand .in{color:var(--accent)}   /* iniziali in rame */
+.nav{display:flex;gap:14px;margin-left:auto;overflow:visible}
+.nav a{color:var(--muted);font-size:var(--fs-sec);font-weight:400;padding:3px 0;white-space:nowrap;
+       border-bottom:1.5px solid transparent}
+.nav a:hover,.nav a.on{color:var(--accent);border-bottom-color:var(--accent);text-decoration:none}
+/* un solo margine automatico, sulla nav: nav e controlli restano un blocco unico a destra */
+.ctrls{display:flex;gap:7px;flex:0 0 auto;margin-left:14px}
+.tb-in.collapsed .ctrls{margin-left:auto}   /* nav nascosta: tocca ai controlli spingersi a destra */
+.tbtn{display:grid;place-items:center;width:32px;height:32px;border-radius:var(--r);
+      border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;
+      font-size:var(--fs-micro);font-weight:600;font-family:var(--fb);letter-spacing:.04em}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+/* rotazione al cambio lingua / tema, come sul sito attuale */
+.spin{animation:spin .45s ease}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.ic-sun{display:none} html[data-theme="dark"] .ic-moon{display:none} html[data-theme="dark"] .ic-sun{display:block}
+
+/* ---------- hero: niente wrap, la foto sparisce se non entra ---------- */
+.hero{display:flex;gap:clamp(20px,3.5vw,36px);align-items:center;flex-wrap:nowrap;
+      padding:clamp(34px,6vw,62px) 0 var(--gap-sec)}
+.hero-txt{flex:1 1 auto;min-width:0}
+.hero-img{flex:0 0 auto}
+/* anello staccato: 3px di fondo, poi 2px di rame. Via box-shadow, non border,
+   cosi l'orlatura non entra nel calcolo dell'ingombro */
+.hero-img{padding:5px}
+.hero-img img{width:clamp(132px,16.4vw,180px);height:clamp(132px,16.4vw,180px);
+              border-radius:50%;object-fit:cover;display:block;border:none;
+              box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--accent)}
+@media(max-width:660px){.hero-img{display:none}}
+.eyebrow{color:var(--accent);font-weight:600;font-size:var(--fs-micro);
+         letter-spacing:.16em;text-transform:uppercase;margin-bottom:11px}
+h1{font-family:var(--fd);font-size:var(--fs-h1);font-weight:700;margin:0 0 5px;
+   letter-spacing:-.015em;line-height:1.04;overflow-wrap:break-word}
+.role{margin:0 0 3px;font-size:var(--fs-role);font-weight:400}
+.tag-line{margin:0 0 20px;font-size:var(--fs-sec);color:var(--muted)}
+.cta{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 16px}
+.btn{display:inline-flex;align-items:center;padding:9px 18px;border-radius:var(--r);
+     background:var(--accent);color:#fff;font-size:var(--fs-sec);font-weight:500;border:1px solid var(--accent)}
+.btn:hover{text-decoration:none;opacity:.9}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.ghost:hover{background:var(--soft)}
+/* collegamenti esterni: solo icone, nella barra in alto */
+.social{display:flex;gap:2px;align-items:center;flex:0 0 auto;margin-right:8px;
+        padding-right:9px;border-right:1px solid var(--line)}
+.social a{display:grid;place-items:center;width:30px;height:30px;border-radius:var(--r);color:var(--muted)}
+.social a svg{width:16px;height:16px}
+.social a:hover{color:var(--accent);background:var(--soft);text-decoration:none}
+.social-panel{display:flex;gap:2px;justify-content:space-between}
+.social-panel a{display:grid;place-items:center;width:32px;height:32px;border-radius:var(--r);
+                color:var(--muted);border:1px solid var(--line);flex:1 1 auto}
+.social-panel a svg{width:16px;height:16px}
+.social-panel a:hover{color:var(--accent);border-color:var(--accent);background:var(--soft);
+                      text-decoration:none}
+
+/* ---------- sezioni ---------- */
+section{padding:var(--gap-sec) 0;border-top:1.5px solid var(--line)}
+section.nb{border-top:none;padding-top:4px;padding-bottom:var(--gap-sec)}
+h2{font-family:var(--fd);font-size:var(--fs-meta);font-weight:600;text-transform:uppercase;
+   letter-spacing:.14em;color:var(--accent);margin:0 0 clamp(26px,3.3vw,41px)}
+h3.sub{font-family:var(--fd);font-size:var(--fs-h3);font-weight:600;color:var(--fg);
+       margin:clamp(22px,3vw,30px) 0 13px}
+/* nessuna misura fissa: l'About segue gli stessi margini del resto della pagina */
+/* stessa misura del resto del corpo: cambia solo l'interlinea, piu ampia per la prosa */
+/* About e Contatti giustificati. La sillabazione automatica e necessaria, non un
+   ornamento: senza, la giustificazione allarga gli spazi fra le parole e su una misura
+   di 70 caratteri si aprono i buchi. Il browser sceglie il dizionario dall'attributo
+   lang dell'html, che il selettore di lingua aggiorna a ogni cambio.
+   Sotto i 640px si torna a bandiera: li la riga e troppo corta perche la
+   giustificazione non si veda. */
+.lede{margin:0 0 .85em;font-size:var(--fs-body);line-height:1.7;
+      text-align:justify;text-justify:inter-word;
+      -webkit-hyphens:auto;hyphens:auto}
+@media(max-width:640px){.lede{text-align:left;hyphens:manual}}
+.lede:last-child{margin-bottom:0}
+.lede strong{font-weight:600} .lede em{font-style:italic}
+
+/* ---------- schede aree di ricerca ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,248px),1fr));gap:12px}
+.icard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px 16px}
+.icard h3{font-family:var(--fd);font-size:var(--fs-h3);font-weight:600;margin:0 0 4px;color:var(--fg)}
+.icard p{margin:0;font-size:var(--fs-sec);color:var(--muted);line-height:1.5}
+
+/* ---------- righe ---------- */
+.row{display:flex;gap:clamp(12px,2.4vw,22px);padding:13px 0;border-bottom:1px solid var(--line);
+     align-items:baseline}
+.row:last-of-type{border-bottom:none}
+.row.compact{padding:10px 0}
+.row-main{flex:1 1 auto;min-width:0}
+.row-side{flex:0 0 auto;font-size:var(--fs-meta);color:var(--muted);text-align:right;
+          white-space:nowrap;font-variant-numeric:tabular-nums}
+/* "present": colore del testo pieno, peso normale */
+.pres{color:var(--fg);font-weight:400}
+/* riga del titolo: flex a baseline, cosi il pill non "galleggia" sopra il testo */
+.titleline{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.rt{font-family:var(--fd);font-weight:600;font-size:var(--fs-body);color:var(--fg);letter-spacing:-.01em}
+a.rt:hover{color:var(--accent);text-decoration:none}
+.star-ic{color:var(--accent)}   /* solo la stella prende l'accento, il titolo no */
+.rm{font-size:var(--fs-sec);color:var(--muted);margin-top:3px}
+.rm strong{color:var(--fg);font-weight:600}
+.rx{font-size:var(--fs-meta);color:var(--muted);margin-top:3px;font-style:italic}
+/* parole chiave della tesi: terza riga; solo l'etichetta prende il colore pieno */
+.kw{font-size:var(--fs-micro);color:var(--muted);margin-top:4px;letter-spacing:.01em}
+.kw-lab{color:var(--fg);font-weight:500}
+.minilink{font-size:var(--fs-micro);white-space:nowrap}
+.taglead{margin-bottom:6px}          /* il tipo di pubblicazione su una riga propria */
+.tag{display:inline-block;flex:0 0 auto;font-size:10px;font-weight:600;letter-spacing:.09em;
+     text-transform:uppercase;padding:3px 9px;border-radius:var(--r-sm);line-height:1.5}
+.tag.j{background:var(--soft);color:var(--accent)}
+.tag.c{background:var(--chip);color:var(--muted)}
+/* --- progetti: acronimo, titolo esteso, info --- */
+.proj-full{font-size:var(--fs-sec);color:var(--fg);margin-top:2px;font-weight:400}
+.proj .rm{margin-top:3px}
+
+/* --- trattamenti del ruolo (una sola variante attiva per pagina) --- */
+.role-badge{flex:0 0 auto;font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+     padding:3px 9px;border-radius:var(--r);background:var(--accent);color:#fff;line-height:1.5}
+.role-soft{flex:0 0 auto;font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+     padding:3px 9px;border-radius:var(--r-sm);background:var(--soft);color:var(--accent);line-height:1.5;
+     border:1px solid color-mix(in srgb,var(--accent) 26%,transparent)}
+.role-eyebrow{font-size:var(--fs-micro);font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+     color:var(--accent);margin-bottom:4px}
+.role-line{margin-top:5px;font-size:var(--fs-meta);color:var(--muted)}
+.role-key{font-weight:600;color:var(--fg)}
+.role-key::after{content:" — "}
+.role-line .role-val{color:var(--muted)}
+.role-rule{margin-top:6px;padding-left:9px;border-left:2px solid var(--accent);
+     font-size:var(--fs-meta);color:var(--fg);font-weight:500}
+.role-side{margin-top:4px;font-size:var(--fs-micro);color:var(--accent);font-weight:500;
+     white-space:normal;max-width:190px}
+.more{margin:18px 0 0;font-size:var(--fs-sec)}
+
+/* ---------- competizioni ---------- */
+.comps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,258px),1fr));gap:10px}
+.comp{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);
+      border-radius:var(--r);padding:11px 13px}
+.cm{flex:0 0 auto;font-family:var(--fd);font-weight:700;font-size:var(--fs-sec);padding:5px 9px;
+    border-radius:var(--r);font-variant-numeric:tabular-nums}
+.comp.gold .cm{background:#E8B923;color:#3A2E05}
+.comp.bronze .cm{background:#C0885B;color:#33200E}
+.cb{display:flex;flex-direction:column;min-width:0}
+.cn{font-size:var(--fs-sec);font-weight:500;color:var(--fg)}
+.co{font-size:var(--fs-micro);color:var(--muted)}
+
+/* ---------- collassabili ---------- */
+details.more-wrap summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:7px;
+  margin-top:13px;font-size:var(--fs-sec);font-weight:500;color:var(--accent);padding:6px 13px;
+  border:1px solid var(--line);border-radius:var(--r);background:var(--card);user-select:none}
+details.more-wrap summary::-webkit-details-marker{display:none}
+details.more-wrap summary:hover{border-color:var(--accent);background:var(--soft)}
+details[open].more-wrap summary{margin-bottom:12px}   /* aria fra il bottone e le voci che apre */
+.chev{transition:transform .18s}
+details[open].more-wrap summary .chev{transform:rotate(180deg)}
+details.more-wrap summary .lbl-open{display:none}
+details[open].more-wrap summary .lbl-shut{display:none}
+details[open].more-wrap summary .lbl-open{display:inline}
+
+/* ---------- filetto etichettato (separa dottorato e magistrali) ---------- */
+/* Esperienza e formazione in due colonne, come sul CV. Il filetto verticale separa
+   le due senza aggiungere un secondo titolo di sezione. */
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(22px,3.2vw,38px)}
+.twocol-c + .twocol-c{border-left:1.5px solid var(--line);padding-left:clamp(22px,3.2vw,38px)}
+.twocol-c .row:last-of-type{border-bottom:none}
+.colh{font-size:var(--fs-micro);font-weight:600;text-transform:uppercase;letter-spacing:.14em;
+      color:var(--accent);margin:0 0 14px}
+@media(max-width:860px){
+  .twocol{grid-template-columns:1fr}
+  .twocol-c + .twocol-c{border-left:none;padding-left:0;border-top:1.5px solid var(--line);
+                        padding-top:20px;margin-top:6px}
+}
+.divlab{display:flex;align-items:center;gap:12px;margin:22px 0 6px;font-size:var(--fs-micro);
+  font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.divlab::after{content:"";flex:1 1 auto;height:1.5px;background:var(--line)}
+.divlab:first-of-type{margin-top:0}
+
+/* ---------- due colonne ---------- */
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.twocol .row{border-bottom:1px solid var(--line)}
+@media(max-width:760px){.twocol{grid-template-columns:1fr}}
+
+footer{padding:var(--gap-sec) 0 60px;border-top:1px solid var(--line);color:var(--muted);
+       font-size:var(--fs-sec);display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.dot{opacity:.5}
+.badge-note{margin-left:auto;font-size:var(--fs-micro);padding:3px 10px;border-radius:var(--r-sm);
+            background:var(--soft);color:var(--accent);font-weight:500}
+
+/* ---------- menu a tendina (solo stretto) ---------- */
+/* la tendina chiude la barra a destra, staccata da un filetto come le icone */
+.navmenu{position:relative;display:none;flex:0 0 auto;
+         margin-left:8px;padding-left:9px;border-left:1px solid var(--line)}
+/* collassata: la barra non contiene tutte le voci, quindi passa alla tendina */
+.tb-in.collapsed .nav{display:none}
+.tb-in.collapsed .navmenu{display:block}
+.navmenu > summary{list-style:none;display:grid;place-items:center;width:32px;height:32px;
+  border-radius:var(--r);border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.navmenu > summary::-webkit-details-marker{display:none}
+.navmenu > summary:hover{border-color:var(--accent);color:var(--accent)}
+.navmenu .panel{position:absolute;right:0;top:38px;min-width:190px;padding:6px;z-index:60;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:0 12px 34px rgba(0,0,0,.16);display:flex;flex-direction:column}
+html[data-theme="dark"] .navmenu .panel{box-shadow:0 12px 34px rgba(0,0,0,.5)}
+.navmenu .panel a{padding:9px 12px;font-size:var(--fs-sec);color:var(--fg);border-radius:6px}
+.navmenu .panel a:hover{background:var(--soft);color:var(--accent);text-decoration:none}
+/* duplicati utili solo quando la barra li nasconde */
+.navmenu .tools{display:none;gap:6px;margin-top:6px;padding-top:8px;border-top:1px solid var(--line)}
+.navmenu .tools .tbtn{flex:1 1 auto}
+
+@media(max-width:720px){
+  .nav{display:none}
+  .navmenu{display:block}
+  .ctrls > .tbtn,.ctrls > .social{display:none}   /* stretto: resta solo nome + tendina */
+  /* sotto i 720px la nav e nascosta dal CSS, quindi fitNav non rileva debordamento:
+     l'allineamento a destra deve venire dai controlli, non dalla classe collapsed */
+  .ctrls{margin-left:auto}
+  .navmenu{margin-left:0;padding-left:0;border-left:none}  /* niente filetto: non separa piu nulla */
+  .navmenu .tools{display:flex}
+  .row{flex-direction:column;gap:2px}
+  .row-side{text-align:left}
+}
+
+/* ---------- apparizione ---------- */
+/* i contatori partono nascosti SOLO se c'e JS, cosi senza JS restano i valori veri nell'HTML */
+html.js [data-count]{opacity:0}
+html.js [data-count].ready{opacity:1;transition:opacity .2s}
+html.js .reveal{opacity:0;transform:translateY(16px)}
+html.js .reveal.in{opacity:1;transform:none}
+html.js .reveal{transition:opacity .62s cubic-bezier(.22,.61,.36,1),transform .62s cubic-bezier(.22,.61,.36,1);
+                transition-delay:var(--d,0ms)}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.js .reveal{opacity:1 !important;transform:none !important;transition:none !important}
+  *{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+
+/* nota accanto al numero: stessa resa del numero, ma esclusa dall'animazione */
+.mv-note{white-space:nowrap}
+
+/* griglia fissa: sempre 3 colonne x 2 righe, a ogni larghezza */
+.m-card,.m-rule{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.m-band{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+
+/* == 1. schede == */
+.m-card{gap:clamp(7px,1.1vw,10px)}
+.m-card .mi{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+            padding:clamp(10px,1.6vw,15px) clamp(10px,1.6vw,15px) clamp(9px,1.4vw,13px);min-width:0}
+.m-card .mv{display:block;font-family:var(--fd);font-size:clamp(19px,2.5vw,28px);font-weight:700;
+            color:var(--accent);line-height:1.05;font-variant-numeric:tabular-nums}
+/* color esplicito: senza, l'etichetta eredita il colore calcolato di body e non
+   rilegge --fg quando le variabili vengono ridefinite piu in basso nell'albero */
+.m-card .ml{display:block;font-size:var(--fs-sec);font-weight:500;margin-top:4px;color:var(--fg)}
+.m-card .ms{display:block;font-size:var(--fs-meta);color:var(--muted);margin-top:2px;line-height:1.4}
+
+/* == 2. fascia continua == */
+.m-band{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.m-band .mi{padding:clamp(11px,1.7vw,16px) clamp(11px,1.8vw,18px);min-width:0;
+            border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.m-band .mi:nth-child(3n){border-right:none}
+.m-band .mi:nth-last-child(-n+3){border-bottom:none}
+.m-band .mv{display:block;font-family:var(--fd);font-size:clamp(19px,2.3vw,26px);font-weight:700;
+            color:var(--accent);line-height:1.05;font-variant-numeric:tabular-nums}
+.m-band .ml{display:block;font-size:var(--fs-meta);font-weight:500;margin-top:3px;color:var(--fg)}
+.m-band .ms{display:block;font-size:var(--fs-micro);color:var(--muted);line-height:1.35}
+
+/* == 3. filetto d'accento == */
+.m-rule{gap:clamp(12px,2.4vw,26px)}
+.m-rule .mi{border-left:2px solid var(--accent);padding:2px 0 2px clamp(10px,1.5vw,14px);min-width:0}
+.m-rule .mv{display:block;font-family:var(--fd);font-size:clamp(20px,2.7vw,30px);font-weight:700;
+            line-height:1.02;font-variant-numeric:tabular-nums}
+.m-rule .ml{display:block;font-size:var(--fs-meta);font-weight:500;margin-top:3px;color:var(--fg)}
+.m-rule .ms{display:block;font-size:var(--fs-micro);color:var(--muted);line-height:1.35}
+
+/* == 4. tre grandi + coda == */
+.m-hero3 .top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+              gap:clamp(12px,3vw,34px);padding-bottom:18px;border-bottom:1px solid var(--line)}
+.m-hero3 .top .mv{display:block;font-family:var(--fd);font-size:clamp(34px,5.2vw,52px);font-weight:700;
+                  color:var(--accent);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.m-hero3 .top .ml{display:block;font-size:var(--fs-sec);font-weight:500;margin-top:5px}
+.m-hero3 .top .ms{display:block;font-size:var(--fs-micro);color:var(--muted)}
+.m-hero3 .rest{display:flex;flex-wrap:wrap;gap:8px 26px;padding-top:14px}
+.m-hero3 .rest .mi{display:flex;align-items:baseline;gap:7px}
+.m-hero3 .rest .mv{font-family:var(--fd);font-weight:700;font-size:var(--fs-lede);color:var(--accent);
+                   font-variant-numeric:tabular-nums}
+.m-hero3 .rest .ml{font-size:var(--fs-meta);color:var(--fg)}
+.m-hero3 .rest .ms{font-size:var(--fs-micro);color:var(--muted)}
+
+/* == 5. nastro editoriale == */
+.m-inline{font-size:var(--fs-lede);line-height:2.05;max-width:66ch}
+.m-inline .mi{display:inline;white-space:nowrap;margin-right:4px}
+.m-inline .mv{font-family:var(--fd);font-weight:700;font-size:1.42em;color:var(--accent);
+              font-variant-numeric:tabular-nums;vertical-align:-.04em}
+.m-inline .ml{color:var(--fg)}
+.m-inline .ms{display:none}
+.m-inline .sep{color:var(--line);margin:0 9px}
+
 </style>
 </head>
 <body>
-
-<div class="controls">
-  <button class="tbtn" id="langBtn" aria-label="Switch language (EN / IT)"><span class="lbl" id="langLbl">IT</span></button>
-  <button class="tbtn" id="themeBtn" aria-label="Toggle dark / light theme">
-    <svg class="ic-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    <svg class="ic-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-  </button>
+<div class="topbar"><div class="tb-in"><a class="brand" href="#top">Eugenio Lomurno</a><nav class="nav"><a href="#about" data-sections="about metrics education" data-en="About" data-it="Chi sono">About</a><a href="#research" data-sections="research publications awards" data-en="Research" data-it="Ricerca">Research</a><a href="#projects" data-sections="projects" data-en="Projects" data-it="Progetti">Projects</a><a href="#teaching" data-sections="teaching" data-en="Teaching" data-it="Didattica">Teaching</a><a href="#supervision" data-sections="supervision" data-en="Supervisions" data-it="Supervisioni">Supervisions</a></nav><div class="ctrls"><div class="social"><a href="https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.92 4.24Q20.23 4.29 20.23 4.76V11.48Q20.23 11.64 20.15 11.77Q20.07 11.9 19.94 11.97Q19.81 12.05 19.66 12.05H19.45Q19.34 12.05 19.21 11.97Q19.08 11.9 19.01 11.77Q18.93 11.64 18.93 11.48V4.76Q18.93 4.24 19.24 4.24V3.35L16.27 5.75Q16.32 5.8 16.32 5.85Q16.38 5.91 16.38 5.91Q16.79 6.64 16.79 7.68Q16.79 8.46 16.51 9.11Q16.22 9.76 15.85 10.15Q15.49 10.54 15.1 10.88Q14.71 11.22 14.42 11.58Q14.14 11.95 14.14 12.31Q14.14 12.68 14.5 13.07Q14.86 13.46 15.39 13.88Q15.85 14.24 16.38 14.71Q16.9 15.12 17.23 15.85Q17.57 16.58 17.57 17.42Q17.57 18.56 17.0 19.47Q16.43 20.39 15.49 20.93Q14.55 21.48 13.51 21.74Q12.47 22.0 11.43 22.0Q10.75 22.0 10.07 21.9Q9.4 21.79 8.72 21.53Q8.04 21.27 7.52 20.88Q7.0 20.49 6.66 19.89Q6.32 19.29 6.32 18.51Q6.32 17.62 6.82 16.87Q7.31 16.11 8.15 15.59Q9.6 14.71 12.62 14.5Q11.95 13.61 11.95 12.83Q11.95 12.42 12.16 11.9Q11.79 11.95 11.43 11.95Q9.76 11.95 8.64 10.88Q7.52 9.81 7.52 8.15Q7.52 7.99 7.52 7.83H3.04L9.81 2.0H20.96L19.92 2.78ZM13.46 15.18Q13.25 15.12 12.94 15.12Q12.16 15.12 11.43 15.28Q10.7 15.44 9.99 15.72Q9.29 16.01 8.85 16.61Q8.41 17.21 8.41 18.04Q8.41 18.77 8.8 19.37Q9.19 19.97 9.81 20.31Q10.44 20.65 11.11 20.8Q11.84 21.01 12.52 21.01Q13.98 21.01 14.99 20.36Q16.01 19.71 16.01 18.35Q16.01 18.09 15.93 17.83Q15.85 17.57 15.78 17.36Q15.7 17.16 15.49 16.9Q15.28 16.69 15.12 16.53Q15.02 16.38 14.71 16.11Q14.4 15.85 14.32 15.8Q14.24 15.75 13.88 15.49Q13.51 15.23 13.46 15.18ZM14.71 8.82Q14.71 7.94 14.4 6.95Q14.08 5.96 13.38 5.18Q12.68 4.4 11.74 4.4Q10.7 4.4 10.15 5.15Q9.6 5.91 9.6 6.95Q9.6 7.89 9.89 8.82Q10.18 9.76 10.88 10.52Q11.58 11.27 12.52 11.27Q13.56 11.27 14.14 10.57Q14.71 9.86 14.71 8.82Z"/></svg></a><a href="https://www.scopus.com/authid/detail.uri?authorId=57226274677" target="_blank" rel="noopener" aria-label="Scopus" title="Scopus"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2.0 2.0H22.0V22.0H2.0ZM8.09 7.21Q6.9 7.21 6.17 7.91Q5.44 8.61 5.44 9.66Q5.44 9.92 5.49 10.15Q5.54 10.39 5.62 10.54Q5.7 10.7 5.88 10.91Q6.06 11.11 6.14 11.22Q6.22 11.32 6.53 11.53Q6.84 11.74 6.9 11.79Q6.95 11.84 7.31 12.05Q7.68 12.26 7.73 12.31Q7.83 12.36 8.04 12.47Q8.25 12.57 8.35 12.65Q8.46 12.73 8.61 12.83Q8.77 12.94 8.88 13.02Q8.98 13.09 9.08 13.2Q9.19 13.3 9.27 13.43Q9.34 13.56 9.37 13.72Q9.4 13.88 9.4 14.03Q9.4 14.66 8.9 15.07Q8.41 15.49 7.73 15.49Q6.58 15.49 5.54 14.86L5.39 15.96Q6.43 16.43 7.78 16.43Q8.93 16.43 9.76 15.75Q10.59 15.07 10.59 13.88Q10.59 13.3 10.26 12.83Q9.92 12.36 9.58 12.13Q9.24 11.9 8.56 11.48Q8.46 11.43 8.35 11.38Q8.25 11.32 7.96 11.14Q7.68 10.96 7.55 10.88Q7.42 10.8 7.21 10.65Q7.0 10.49 6.9 10.36Q6.79 10.23 6.71 10.02Q6.64 9.81 6.64 9.55Q6.64 8.98 7.03 8.54Q7.42 8.09 8.15 8.09Q9.4 8.09 10.39 8.72L10.49 7.62Q9.45 7.21 8.09 7.21ZM16.53 7.21Q14.55 7.21 13.22 8.54Q11.9 9.86 11.9 11.84Q11.9 13.93 13.3 15.15Q14.71 16.38 16.48 16.38Q18.2 16.38 19.19 15.85L19.14 14.86Q17.99 15.49 16.58 15.49Q15.59 15.49 14.81 14.99Q14.03 14.5 13.59 13.64Q13.15 12.78 13.15 11.74Q13.15 10.12 14.08 9.11Q15.02 8.09 16.38 8.09Q17.99 8.09 19.14 8.72L19.19 7.73Q18.15 7.21 16.53 7.21Z"/></svg></a><a href="https://github.com/eugeniolomurno" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a><a href="https://www.linkedin.com/in/eugenio-lomurno-a28b12162/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a><a href="https://www.instagram.com/tacchinoleso/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.3"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a></div><button class="tbtn js-lang" aria-label="Switch language">IT</button><button class="tbtn js-theme" aria-label="Toggle theme"><svg class="ic-moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><details class="navmenu" id="navMenu"><summary aria-label="Sections"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary><div class="panel"><a href="#about" data-en="About" data-it="Chi sono">About</a><a href="#research" data-en="Research" data-it="Ricerca">Research</a><a href="#projects" data-en="Projects" data-it="Progetti">Projects</a><a href="#teaching" data-en="Teaching" data-it="Didattica">Teaching</a><a href="#supervision" data-en="Supervisions" data-it="Supervisioni">Supervisions</a><div class="tools"><div class="social-panel"><a href="https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.92 4.24Q20.23 4.29 20.23 4.76V11.48Q20.23 11.64 20.15 11.77Q20.07 11.9 19.94 11.97Q19.81 12.05 19.66 12.05H19.45Q19.34 12.05 19.21 11.97Q19.08 11.9 19.01 11.77Q18.93 11.64 18.93 11.48V4.76Q18.93 4.24 19.24 4.24V3.35L16.27 5.75Q16.32 5.8 16.32 5.85Q16.38 5.91 16.38 5.91Q16.79 6.64 16.79 7.68Q16.79 8.46 16.51 9.11Q16.22 9.76 15.85 10.15Q15.49 10.54 15.1 10.88Q14.71 11.22 14.42 11.58Q14.14 11.95 14.14 12.31Q14.14 12.68 14.5 13.07Q14.86 13.46 15.39 13.88Q15.85 14.24 16.38 14.71Q16.9 15.12 17.23 15.85Q17.57 16.58 17.57 17.42Q17.57 18.56 17.0 19.47Q16.43 20.39 15.49 20.93Q14.55 21.48 13.51 21.74Q12.47 22.0 11.43 22.0Q10.75 22.0 10.07 21.9Q9.4 21.79 8.72 21.53Q8.04 21.27 7.52 20.88Q7.0 20.49 6.66 19.89Q6.32 19.29 6.32 18.51Q6.32 17.62 6.82 16.87Q7.31 16.11 8.15 15.59Q9.6 14.71 12.62 14.5Q11.95 13.61 11.95 12.83Q11.95 12.42 12.16 11.9Q11.79 11.95 11.43 11.95Q9.76 11.95 8.64 10.88Q7.52 9.81 7.52 8.15Q7.52 7.99 7.52 7.83H3.04L9.81 2.0H20.96L19.92 2.78ZM13.46 15.18Q13.25 15.12 12.94 15.12Q12.16 15.12 11.43 15.28Q10.7 15.44 9.99 15.72Q9.29 16.01 8.85 16.61Q8.41 17.21 8.41 18.04Q8.41 18.77 8.8 19.37Q9.19 19.97 9.81 20.31Q10.44 20.65 11.11 20.8Q11.84 21.01 12.52 21.01Q13.98 21.01 14.99 20.36Q16.01 19.71 16.01 18.35Q16.01 18.09 15.93 17.83Q15.85 17.57 15.78 17.36Q15.7 17.16 15.49 16.9Q15.28 16.69 15.12 16.53Q15.02 16.38 14.71 16.11Q14.4 15.85 14.32 15.8Q14.24 15.75 13.88 15.49Q13.51 15.23 13.46 15.18ZM14.71 8.82Q14.71 7.94 14.4 6.95Q14.08 5.96 13.38 5.18Q12.68 4.4 11.74 4.4Q10.7 4.4 10.15 5.15Q9.6 5.91 9.6 6.95Q9.6 7.89 9.89 8.82Q10.18 9.76 10.88 10.52Q11.58 11.27 12.52 11.27Q13.56 11.27 14.14 10.57Q14.71 9.86 14.71 8.82Z"/></svg></a><a href="https://www.scopus.com/authid/detail.uri?authorId=57226274677" target="_blank" rel="noopener" aria-label="Scopus" title="Scopus"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2.0 2.0H22.0V22.0H2.0ZM8.09 7.21Q6.9 7.21 6.17 7.91Q5.44 8.61 5.44 9.66Q5.44 9.92 5.49 10.15Q5.54 10.39 5.62 10.54Q5.7 10.7 5.88 10.91Q6.06 11.11 6.14 11.22Q6.22 11.32 6.53 11.53Q6.84 11.74 6.9 11.79Q6.95 11.84 7.31 12.05Q7.68 12.26 7.73 12.31Q7.83 12.36 8.04 12.47Q8.25 12.57 8.35 12.65Q8.46 12.73 8.61 12.83Q8.77 12.94 8.88 13.02Q8.98 13.09 9.08 13.2Q9.19 13.3 9.27 13.43Q9.34 13.56 9.37 13.72Q9.4 13.88 9.4 14.03Q9.4 14.66 8.9 15.07Q8.41 15.49 7.73 15.49Q6.58 15.49 5.54 14.86L5.39 15.96Q6.43 16.43 7.78 16.43Q8.93 16.43 9.76 15.75Q10.59 15.07 10.59 13.88Q10.59 13.3 10.26 12.83Q9.92 12.36 9.58 12.13Q9.24 11.9 8.56 11.48Q8.46 11.43 8.35 11.38Q8.25 11.32 7.96 11.14Q7.68 10.96 7.55 10.88Q7.42 10.8 7.21 10.65Q7.0 10.49 6.9 10.36Q6.79 10.23 6.71 10.02Q6.64 9.81 6.64 9.55Q6.64 8.98 7.03 8.54Q7.42 8.09 8.15 8.09Q9.4 8.09 10.39 8.72L10.49 7.62Q9.45 7.21 8.09 7.21ZM16.53 7.21Q14.55 7.21 13.22 8.54Q11.9 9.86 11.9 11.84Q11.9 13.93 13.3 15.15Q14.71 16.38 16.48 16.38Q18.2 16.38 19.19 15.85L19.14 14.86Q17.99 15.49 16.58 15.49Q15.59 15.49 14.81 14.99Q14.03 14.5 13.59 13.64Q13.15 12.78 13.15 11.74Q13.15 10.12 14.08 9.11Q15.02 8.09 16.38 8.09Q17.99 8.09 19.14 8.72L19.19 7.73Q18.15 7.21 16.53 7.21Z"/></svg></a><a href="https://github.com/eugeniolomurno" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a><a href="https://www.linkedin.com/in/eugenio-lomurno-a28b12162/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a><a href="https://www.instagram.com/tacchinoleso/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.3"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a></div></div><div class="tools"><button class="tbtn js-lang" aria-label="Switch language">IT</button><button class="tbtn js-theme" aria-label="Toggle theme"><svg class="ic-moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ic-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button></div></div></details></div></div></div>
+<div class="wrap" id="top">
+<header class="hero"><div class="hero-img reveal"><img src="data:image/jpeg;base64,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" alt="Eugenio Lomurno" width="172" height="172"></div><div class="hero-txt"><div class="eyebrow reveal" data-en="AIRLab | DEIB | Politecnico di Milano" data-it="AIRLab | DEIB | Politecnico di Milano">AIRLab | DEIB | Politecnico di Milano</div><h1 class="reveal">Eugenio Lomurno</h1><p class="role reveal" data-en="Postdoctoral Fellow" data-it="Assegnista di ricerca">Postdoctoral Fellow</p><div class="cta reveal"><a class="btn" href="CV_Eugenio_Lomurno_EN.pdf" download data-en="Download CV" data-it="Scarica il CV" data-en-attr="href:CV_Eugenio_Lomurno_EN.pdf" data-it-attr="href:CV_Eugenio_Lomurno_IT.pdf">Download CV</a><a class="btn ghost" href="mailto:eugenio.lomurno@polimi.it" data-en="Get in touch" data-it="Scrivimi">Get in touch</a></div></div></header>
+<section id="about"><h2 class="reveal" data-en="About" data-it="Chi sono">About</h2><p class="lede reveal" data-en="I am a postdoctoral fellow in the AIRLab group at the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, where I completed my PhD in Information Technology <em>cum laude</em> in 2025." data-it="Sono un assegnista di ricerca nel gruppo AIRLab del Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB) del Politecnico di Milano, dove nel 2025 ho conseguito il dottorato in Information Technology <em>con lode</em>.">I am a postdoctoral fellow in the AIRLab group at the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, where I completed my PhD in Information Technology <em>cum laude</em> in 2025.</p><p class="lede reveal" data-en="My research has grown within the H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> and <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> projects and the PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a> project, and continues today &mdash; in the Lombardy-funded <em>PREDICT</em> project &mdash; with cutting-edge generative techniques for synthesising and privately sharing medical images and data. I am also part of the <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), a joint research platform of EssilorLuxottica and Politecnico di Milano, where I work on quantised neural architecture search for edge devices." data-it="La mia ricerca &egrave; cresciuta all'interno dei progetti H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> e <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> e nel progetto PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a>, e prosegue oggi &mdash; nel progetto <em>PREDICT</em> finanziato da Regione Lombardia &mdash; con tecniche generative all'avanguardia per sintetizzare e condividere in maniera privata immagini e dati medici. Faccio inoltre parte dello <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), piattaforma di ricerca congiunta di EssilorLuxottica e Politecnico di Milano, dove mi occupo di neural architecture search quantizzato per dispositivi edge.">My research has grown within the H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> and <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> projects and the PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a> project, and continues today &mdash; in the Lombardy-funded <em>PREDICT</em> project &mdash; with cutting-edge generative techniques for synthesising and privately sharing medical images and data. I am also part of the <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), a joint research platform of EssilorLuxottica and Politecnico di Milano, where I work on quantised neural architecture search for edge devices.</p><p class="lede reveal" data-en="Within the scientific debate, I share the concerns of that part of the scientific community which questions the scenarios of artificial intelligence, advocating the necessity to develop strategies to address critical phenomena such as goal misalignment, self-replication, and uncontrolled self-improvement in advanced AI systems. I believe the purpose of artificial intelligence must be the prosperity and wellbeing of humanity, and that among its most urgent tasks is confronting the climate crisis." data-it="Nel dibattito scientifico condivido le preoccupazioni di quella parte della comunit&agrave; che si interroga sugli scenari dell'intelligenza artificiale, e sostengo la necessit&agrave; di sviluppare strategie per affrontare fenomeni critici come il disallineamento degli obiettivi, l'autoreplicazione e l'automiglioramento incontrollato nei sistemi avanzati. Ritengo che il fine dell'intelligenza artificiale debba essere la prosperit&agrave; e il benessere dell'umanit&agrave;, e che fra i suoi compiti pi&ugrave; urgenti ci sia affrontare la crisi climatica.">Within the scientific debate, I share the concerns of that part of the scientific community which questions the scenarios of artificial intelligence, advocating the necessity to develop strategies to address critical phenomena such as goal misalignment, self-replication, and uncontrolled self-improvement in advanced AI systems. I believe the purpose of artificial intelligence must be the prosperity and wellbeing of humanity, and that among its most urgent tasks is confronting the climate crisis.</p></section>
+<section class="nb reveal"><div class="m-card"><div class="mi"><span class="mv"><span data-count="12 / 9">12 / 9</span></span><span class="ml" data-en="h-index" data-it="h-index">h-index</span><span class="ms" data-en="Google Scholar / Scopus" data-it="Google Scholar / Scopus">Google Scholar / Scopus</span></div><div class="mi"><span class="mv"><span data-count="340" data-suffix="+">340+</span></span><span class="ml" data-en="Citations" data-it="Citazioni">Citations</span><span class="ms" data-en="Google Scholar" data-it="Google Scholar">Google Scholar</span></div><div class="mi"><span class="mv"><span data-count="30 / 16">30 / 16</span></span><span class="ml" data-en="Publications" data-it="Pubblicazioni">Publications</span><span class="ms" data-en="Overall / A+ Conferences or Q1 Journals" data-it="Totali / Conferenze A+ o riviste Q1">Overall / A+ Conferences or Q1 Journals</span></div><div class="mi"><span class="mv"><span data-count="5">5</span></span><span class="ml" data-en="Research Projects" data-it="Progetti di ricerca">Research Projects</span><span class="ms" data-en="European, Regional, JRP" data-it="Europei, Regionali, JRP">European, Regional, JRP</span></div><div class="mi"><span class="mv"><span data-count="14 / 420" data-suffix="+">14 / 420+</span></span><span class="ml" data-en="Teaching Activities" data-it="Attività didattica">Teaching Activities</span><span class="ms" data-en="University or Corporate Courses / Teaching Hours" data-it="Corsi universitari o aziendali / Ore di didattica">University or Corporate Courses / Teaching Hours</span></div><div class="mi"><span class="mv"><span data-count="25 / 2">25 / 2</span></span><span class="ml" data-en="Supervisions" data-it="Supervisioni">Supervisions</span><span class="ms" data-en="MSc / PhD" data-it="Magistrali / Dottorato">MSc / PhD</span></div></div></section>
+<section id="education"><h2 class="reveal" data-en="Experience and Education" data-it="Esperienza e formazione">Experience and Education</h2><div class="twocol"><div class="twocol-c"><div class="colh reveal" data-en="Education" data-it="Formazione">Education</div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt" data-en="PhD in Information Technology <em>cum laude</em>" data-it="Dottorato in Information Technology <em>con lode</em>">PhD in Information Technology <em>cum laude</em></span></div><div class="rm">AIRLab, DEIB, Politecnico di Milano</div><div class="kw"><span class="kw-lab" data-en="Thesis" data-it="Tesi">Thesis</span>: <a href="https://www.politesi.polimi.it/handle/10589/238117" target="_blank" rel="noopener">Adversarial and Generative Deep Learning for Data Privacy in Human-Centered Artificial Intelligence</a></div></div><div class="row-side" data-en="2020 — 2025" data-it="2020 — 2025">2020 — 2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt" data-en="MSc in Computer Science and Engineering" data-it="Laurea magistrale in Ingegneria Informatica">MSc in Computer Science and Engineering</span></div><div class="rm">Politecnico di Milano</div><div class="kw"><span class="kw-lab" data-en="Thesis" data-it="Tesi">Thesis</span>: <a href="https://www.politesi.polimi.it/handle/10589/153077" target="_blank" rel="noopener">SR-MVS: Multi-View Stereo Enhancement Through Super-Resolution</a></div></div><div class="row-side" data-en="2017 — 2020" data-it="2017 — 2020">2017 — 2020</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt" data-en="BSc in Information Engineering" data-it="Laurea triennale in Ingegneria dell'Informazione">BSc in Information Engineering</span></div><div class="rm">Politecnico di Milano</div></div><div class="row-side" data-en="2013 — 2017" data-it="2013 — 2017">2013 — 2017</div></div></div><div class="twocol-c"><div class="colh reveal" data-en="Experience" data-it="Esperienza">Experience</div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt" data-en="Postdoctoral Fellow" data-it="Assegnista di ricerca">Postdoctoral Fellow</span></div><div class="rm">AIRLab, DEIB, Politecnico di Milano</div></div><div class="row-side" data-en="2025 — <span class='pres'>present</span>" data-it="2025 — <span class='pres'>in corso</span>">2025 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt" data-en="AIRLab Social Media Manager" data-it="Social Media Manager dell'AIRLab">AIRLab Social Media Manager</span></div><div class="rm">AIRLab, DEIB, Politecnico di Milano</div></div><div class="row-side" data-en="2024 — <span class='pres'>present</span>" data-it="2024 — <span class='pres'>in corso</span>">2024 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt" data-en="AIRLab Member" data-it="Membro dell'AIRLab">AIRLab Member</span></div><div class="rm">AIRLab, DEIB, Politecnico di Milano</div></div><div class="row-side" data-en="2019 — <span class='pres'>present</span>" data-it="2019 — <span class='pres'>in corso</span>">2019 — <span class='pres'>present</span></div></div></div></div></section>
+<section id="research"><h2 class="reveal" data-en="Research Interests" data-it="Aree di ricerca">Research Interests</h2><div class="grid"><div class="icard reveal"><h3 data-en="Generative Deep Learning" data-it="Generative Deep Learning">Generative Deep Learning</h3><p data-en="Diffusion, adversarial and variational models for the latent creation of new knowledge." data-it="Modelli di diffusione, avversariali e variazionali per la creazione latente di nuova conoscenza.">Diffusion, adversarial and variational models for the latent creation of new knowledge.</p></div><div class="icard reveal"><h3 data-en="Synthetic Dataset Generation" data-it="Synthetic Dataset Generation">Synthetic Dataset Generation</h3><p data-en="High-utility synthetic datasets, to train downstream machine learning models on synthetic data and test them on real data." data-it="Realizzazione di dataset sintetici ad alta utilità, per addestrare sui sintetici e testare su reali i modelli di machine learning a valle.">High-utility synthetic datasets, to train downstream machine learning models on synthetic data and test them on real data.</p></div><div class="icard reveal"><h3 data-en="Privacy-Preserving Deep Learning" data-it="Privacy-Preserving Deep Learning">Privacy-Preserving Deep Learning</h3><p data-en="Synthetic-data techniques for building private models and exchanging knowledge across institutions." data-it="Sviluppo di tecniche basate su dati sintetici per la realizzazione di modelli privati e lo scambio di conoscenza tra istituzioni.">Synthetic-data techniques for building private models and exchanging knowledge across institutions.</p></div><div class="icard reveal"><h3 data-en="Multimodal Deep Learning" data-it="Multimodal Deep Learning">Multimodal Deep Learning</h3><p data-en="Techniques to build latent knowledge from heterogeneous sources and fuse it to optimise downstream tasks." data-it="Tecniche per creare conoscenza latente da fonti eterogenee e fonderla per ottimizzare i task a valle.">Techniques to build latent knowledge from heterogeneous sources and fuse it to optimise downstream tasks.</p></div><div class="icard reveal"><h3 data-en="Edge-Oriented Neural Architecture Search" data-it="Edge-Oriented Neural Architecture Search">Edge-Oriented Neural Architecture Search</h3><p data-en="NAS techniques for architectures that are Pareto-optimal between accuracy and performance on edge devices." data-it="Tecniche di NAS per lo sviluppo di architetture con ottimalità di Pareto tra accuratezza e performance per dispositivi edge.">NAS techniques for architectures that are Pareto-optimal between accuracy and performance on edge devices.</p></div><div class="icard reveal"><h3 data-en="Healthcare and Climate Applications" data-it="Healthcare and Climate Applications">Healthcare and Climate Applications</h3><p data-en="Applications serving human health and the safeguarding of the climate." data-it="Applicazioni a beneficio della salute dell'essere umano e della salvaguardia del clima.">Applications serving human health and the safeguarding of the climate.</p></div></div></section>
+<section id="publications"><h2 class="reveal" data-en="Selected Publications" data-it="Pubblicazioni selezionate">Selected Publications</h2><div class="row reveal"><div class="row-main"><div class="taglead"><span class="tag j" data-en="Journal" data-it="Rivista">Journal</span></div><div class="titleline"><a class="rt" href="https://doi.org/10.1016/j.imavis.2025.105727" target="_blank" rel="noopener">Your Image Generator Is Your New Private Dataset</a></div><div class="rm">N. Resmini, <strong>E. Lomurno</strong>, C. Sbrolli, M. Matteucci | Image and Vision Computing, 2025</div></div></div><div class="row reveal"><div class="row-main"><div class="taglead"><span class="tag j" data-en="Journal" data-it="Rivista">Journal</span></div><div class="titleline"><a class="rt" href="https://doi.org/10.1016/j.patrec.2025.02.030" target="_blank" rel="noopener">Federated Knowledge Recycling: Privacy-Preserving Synthetic Data Sharing</a></div><div class="rm"><strong>E. Lomurno</strong>, M. Matteucci | Pattern Recognition Letters, 2025</div></div></div><div class="row reveal"><div class="row-main"><div class="taglead"><span class="tag j" data-en="Journal" data-it="Rivista">Journal</span></div><div class="titleline"><a class="rt" href="https://doi.org/10.1016/j.patrec.2025.02.003" target="_blank" rel="noopener">Synthetic Image Learning: Preserving Performance and Preventing Membership Inference Attacks</a></div><div class="rm"><strong>E. Lomurno</strong>, M. Matteucci | Pattern Recognition Letters, 2025</div></div></div><div class="row reveal"><div class="row-main"><div class="taglead"><span class="tag c" data-en="Conference" data-it="Conferenza">Conference</span></div><div class="titleline"><a class="rt" href="https://papers.bmvc2023.org/0715.pdf" target="_blank" rel="noopener">Bridging the Gap: Enhancing the Utility of Synthetic Data via Post-Processing Techniques</a></div><div class="rm">A. Lampis, <strong>E. Lomurno</strong>, M. Matteucci | BMVC, 2023</div></div></div><div class="row reveal"><div class="row-main"><div class="taglead"><span class="tag j" data-en="Journal" data-it="Rivista">Journal</span></div><div class="titleline"><a class="rt" href="https://doi.org/10.1016/j.asoc.2023.110555" target="_blank" rel="noopener">POPNASv3: A Pareto-Optimal Neural Architecture Search Solution for Image and Time Series Classification</a></div><div class="rm">A. Falanti, <strong>E. Lomurno</strong>, D. Ardagna, M. Matteucci | Applied Soft Computing, 2023</div></div></div><p class="more reveal"><a href="https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it" target="_blank" rel="noopener" data-en="Full list on Google Scholar &rarr;" data-it="Elenco completo su Google Scholar &rarr;">Full list on Google Scholar &rarr;</a></p></section>
+<section id="awards"><h2 class="reveal" data-en="Awards and Achievements" data-it="Riconoscimenti e risultati">Awards and Achievements</h2><div class="row reveal"><div class="row-main"><div class="titleline"><span class="rt"><span class="star-ic">&#9733;</span> <span data-en="Leonardo Fibonacci Best Paper Award" data-it="Leonardo Fibonacci Best Paper Award">Leonardo Fibonacci Best Paper Award</span></span></div><div class="rm" data-en="11th International Conference on Machine Learning, Optimization and Data Science, 2025" data-it="11ª International Conference on Machine Learning, Optimization and Data Science, 2025">11th International Conference on Machine Learning, Optimization and Data Science, 2025</div><div class="rx"><a href="https://doi.org/10.1007/978-3-032-21480-5_27" target="_blank" rel="noopener">Neuro-Symbolic Scene Graph Conditioning for Synthetic Image Dataset Generation</a></div></div></div><div class="row reveal"><div class="row-main"><div class="titleline"><span class="rt"><span class="star-ic">&#9733;</span> <span data-en="PhD Awarded <em>Cum Laude</em>" data-it="Dottorato conseguito <em>con lode</em>">PhD Awarded <em>Cum Laude</em></span></span></div><div class="rm" data-en="Politecnico di Milano, 2025" data-it="Politecnico di Milano, 2025">Politecnico di Milano, 2025</div><div class="rx"><a href="https://www.politesi.polimi.it/handle/10589/238117" target="_blank" rel="noopener">Adversarial and Generative Deep Learning for Data Privacy in Human-Centered Artificial Intelligence</a></div></div></div></section>
+<section id="projects"><h2 class="reveal" data-en="Research Projects" data-it="Progetti di ricerca">Research Projects</h2><div class="row proj reveal"><div class="row-main"><div class="titleline"><a class="rt" href="https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/" target="_blank" rel="noopener">SEL</a></div><div class="proj-full">Smart Eyewear Lab</div><div class="rm" data-en="Joint Research Platform, Politecnico di Milano and EssilorLuxottica" data-it="Joint Research Platform, Politecnico di Milano ed EssilorLuxottica">Joint Research Platform, Politecnico di Milano and EssilorLuxottica</div><div class="role-rule" data-en="Research Track Lead — Neural Architecture Search &times; Edge Devices" data-it="Responsabile di linea — Neural Architecture Search &times; dispositivi edge">Research Track Lead — Neural Architecture Search &times; Edge Devices</div></div><div class="row-side"><div data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div></div><div class="row proj reveal"><div class="row-main"><div class="titleline"><a class="rt" href="https://nearlab.polimi.it/neuroengineering-and-medical-robotics/medical/predict/" target="_blank" rel="noopener">PREDICT</a></div><div class="proj-full">Predictive Response and Disease Evaluation in Ovarian Cancer with Generative AI</div><div class="rm" data-en="Fondazione Regionale per la Ricerca Biomedica, Regione Lombardia, ID 012024R0055" data-it="Fondazione Regionale per la Ricerca Biomedica, Regione Lombardia, ID 012024R0055">Fondazione Regionale per la Ricerca Biomedica, Regione Lombardia, ID 012024R0055</div><div class="role-rule" data-en="AI Scientific Lead" data-it="Responsabile scientifico IA">AI Scientific Lead</div></div><div class="row-side"><div data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div></div><div class="row proj reveal"><div class="row-main"><div class="titleline"><a class="rt" href="https://fondazione-fair.it/" target="_blank" rel="noopener">FAIR</a></div><div class="proj-full">Future Artificial Intelligence Research</div><div class="rm" data-en="PNRR, MUR announcement no. 341, ID PE00000013" data-it="PNRR, Avviso MUR n. 341, ID PE00000013">PNRR, MUR announcement no. 341, ID PE00000013</div><div class="role-rule" data-en="Research Track Lead — Generative AI" data-it="Responsabile di linea — IA generativa">Research Track Lead — Generative AI</div></div><div class="row-side"><div data-en="2024 — 2026" data-it="2024 — 2026">2024 — 2026</div></div></div><div class="row proj reveal"><div class="row-main"><div class="titleline"><a class="rt" href="https://doi.org/10.3030/101016577" target="_blank" rel="noopener">AI-SPRINT</a></div><div class="proj-full">Artificial Intelligence in Secure Privacy-preserving Computing Continuum</div><div class="rm" data-en="Horizon 2020, Grant Agreement 101016577" data-it="Horizon 2020, Grant Agreement 101016577">Horizon 2020, Grant Agreement 101016577</div><div class="role-rule" data-en="AI Scientific Lead" data-it="Responsabile scientifico IA">AI Scientific Lead</div></div><div class="row-side"><div data-en="2021 — 2023" data-it="2021 — 2023">2021 — 2023</div></div></div><div class="row proj reveal"><div class="row-main"><div class="titleline"><a class="rt" href="https://doi.org/10.3030/101016112" target="_blank" rel="noopener">ESSENCE</a></div><div class="proj-full">Empathic Platform to Monitor, Stimulate, Enrich and Assist Elders and Children</div><div class="rm" data-en="Horizon 2020, Grant Agreement 101016112" data-it="Horizon 2020, Grant Agreement 101016112">Horizon 2020, Grant Agreement 101016112</div><div class="role-rule" data-en="AI Scientific Lead" data-it="Responsabile scientifico IA">AI Scientific Lead</div></div><div class="row-side"><div data-en="2020 — 2023" data-it="2020 — 2023">2020 — 2023</div></div></div></section>
+<section id="teaching"><h2 class="reveal" data-en="Teaching Activities" data-it="Attività didattica">Teaching Activities</h2><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Intelligenza Artificiale</span></div><div class="rm" data-en="BSc Course, Politecnico di Milano | Teaching Assistant" data-it="Corso triennale, Politecnico di Milano | Assistente alla didattica">BSc Course, Politecnico di Milano | Teaching Assistant</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Advanced Deep Learning</span></div><div class="rm" data-en="MSc Course, Politecnico di Milano | Teaching Assistant" data-it="Corso magistrale, Politecnico di Milano | Assistente alla didattica">MSc Course, Politecnico di Milano | Teaching Assistant</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">AI Bootcamp — TechCamp</span></div><div class="rm" data-en="Summer School, Politecnico di Milano | Teaching Assistant, 3 Editions" data-it="Summer School, Politecnico di Milano | Assistente alla didattica, 3 edizioni">Summer School, Politecnico di Milano | Teaching Assistant, 3 Editions</div></div><div class="row-side" data-en="2024 — <span class='pres'>present</span>" data-it="2024 — <span class='pres'>in corso</span>">2024 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Artificial Neural Networks and Deep Learning</span></div><div class="rm" data-en="MSc Course, Politecnico di Milano | Teaching Assistant, 5 Editions" data-it="Corso magistrale, Politecnico di Milano | Assistente alla didattica, 5 edizioni">MSc Course, Politecnico di Milano | Teaching Assistant, 5 Editions</div></div><div class="row-side" data-en="2021 — <span class='pres'>present</span>" data-it="2021 — <span class='pres'>in corso</span>">2021 — <span class='pres'>present</span></div></div><details class="more-wrap reveal"><summary><span class="lbl-shut" data-en="Show all 14 courses" data-it="Mostra tutti i 14 corsi">Show all 14 courses</span><span class="lbl-open" data-en="Show fewer" data-it="Mostra meno">Show fewer</span><svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Artificial Intelligence</span></div><div class="rm" data-en="Corporate Course, Guber Banca S.p.A. | Teacher, 2 Editions" data-it="Corso aziendale, Guber Banca S.p.A. | Docente, 2 edizioni">Corporate Course, Guber Banca S.p.A. | Teacher, 2 Editions</div></div><div class="row-side" data-en="2025 — 2026" data-it="2025 — 2026">2025 — 2026</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">AI Product Management Bootcamp</span></div><div class="rm" data-en="Corporate Course, CEFRIEL | Teaching Assistant" data-it="Corso aziendale, CEFRIEL | Assistente alla didattica">Corporate Course, CEFRIEL | Teaching Assistant</div></div><div class="row-side" data-en="2025" data-it="2025">2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Generative AI: Methods and Practice</span></div><div class="rm" data-en="Corporate Course, MADE, M.I.A. Lombardia EDIH | Teacher" data-it="Corso aziendale, MADE, M.I.A. Lombardia EDIH | Docente">Corporate Course, MADE, M.I.A. Lombardia EDIH | Teacher</div></div><div class="row-side" data-en="2025" data-it="2025">2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Computer Vision and Image Processing</span></div><div class="rm" data-en="MSc Course, Università Bocconi | Teaching Assistant, 2 Editions" data-it="Corso magistrale, Università Bocconi | Assistente alla didattica, 2 edizioni">MSc Course, Università Bocconi | Teaching Assistant, 2 Editions</div></div><div class="row-side" data-en="2024 — 2025" data-it="2024 — 2025">2024 — 2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Deep Learning for Computer Vision</span></div><div class="rm" data-en="MSc Course, Università Bocconi | Teaching Assistant, 2 Editions" data-it="Corso magistrale, Università Bocconi | Assistente alla didattica, 2 edizioni">MSc Course, Università Bocconi | Teaching Assistant, 2 Editions</div></div><div class="row-side" data-en="2023 — 2024" data-it="2023 — 2024">2023 — 2024</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Deep Learning</span></div><div class="rm" data-en="Corporate Course, CEFRIEL, Master in Data Science &amp; AI | Teacher" data-it="Corso aziendale, CEFRIEL, Master in Data Science &amp; AI | Docente">Corporate Course, CEFRIEL, Master in Data Science &amp; AI | Teacher</div></div><div class="row-side" data-en="2023" data-it="2023">2023</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Advanced Topics in Deep Learning: The Rise of Transformers</span></div><div class="rm" data-en="PhD Course, Politecnico di Milano | Teaching Assistant" data-it="Corso di dottorato, Politecnico di Milano | Assistente alla didattica">PhD Course, Politecnico di Milano | Teaching Assistant</div></div><div class="row-side" data-en="2023" data-it="2023">2023</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Generative Adversarial Networks</span></div><div class="rm" data-en="Corporate Course, CEFRIEL, NOKIA Master AI&amp;ML | Teacher" data-it="Corso aziendale, CEFRIEL, NOKIA Master AI&amp;ML | Docente">Corporate Course, CEFRIEL, NOKIA Master AI&amp;ML | Teacher</div></div><div class="row-side" data-en="2022" data-it="2022">2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Deep Learning and Neural Networks</span></div><div class="rm" data-en="Corporate Course, CEFRIEL, SIAE Master AI&amp;ML | Teaching Assistant" data-it="Corso aziendale, CEFRIEL, SIAE Master AI&amp;ML | Assistente alla didattica">Corporate Course, CEFRIEL, SIAE Master AI&amp;ML | Teaching Assistant</div></div><div class="row-side" data-en="2022" data-it="2022">2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Advanced Deep Learning Models and Methods</span></div><div class="rm" data-en="PhD Course, Politecnico di Milano | Teaching Assistant" data-it="Corso di dottorato, Politecnico di Milano | Assistente alla didattica">PhD Course, Politecnico di Milano | Teaching Assistant</div></div><div class="row-side" data-en="2022" data-it="2022">2022</div></div></details></section>
+<section id="supervision"><h2 class="reveal" data-en="Supervisions" data-it="Supervisioni">Supervisions</h2><div class="divlab reveal" data-en="PhD &mdash; Co-Advisor" data-it="Dottorato &mdash; Co-tutore">PhD &mdash; Co-Advisor</div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Advanced Generative Deep Learning for Healthcare</span></div><div class="rm">Francesca Pia Panaccione</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Generative Deep Learning, Medical Imaging, Healthcare AI</div></div><div class="row-side" data-en="2025 — <span class='pres'>present</span>" data-it="2025 — <span class='pres'>in corso</span>">2025 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Advanced Generative Deep Learning for Synthetic Data Utility Enrichment</span></div><div class="rm">Leonardo Brusini</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Generative Deep Learning, Synthetic Data, Data Utility</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><div class="divlab reveal" data-en="MSc &mdash; Co-Advisor" data-it="Magistrali &mdash; Co-relatore">MSc &mdash; Co-Advisor</div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">What Shapes a Synthetic CT? On Multimodal 3D CT Generation and Conditioning</span></div><div class="rm">Silvia Mombelli</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Medical Imaging, 3D CT Generation, Multimodal Conditioning</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Who&rsquo;s in the Noise? Counterfactual vs Predictive Approaches to Longitudinal CT Synthesis</span></div><div class="rm">Jie Chen</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Counterfactual Generation, Longitudinal Imaging, CT Synthesis</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Compressing Without Compromising? On Knowledge Distillation for Quantization-Aware Training</span></div><div class="rm">Giacomo Bossi</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Knowledge Distillation, Quantisation-Aware Training, Model Compression</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Less is More? On Network Pruning and Low-Rank Approximation for Edge AI</span></div><div class="rm">Andrea Sanvito</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Network Pruning, Low-Rank Approximation, Edge AI</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">&ldquo;P. Sherman, 42 Wallaby Way, Sydney&rdquo;: Investigating When LLMs Forget What They Were Talking About</span></div><div class="rm">Fabiola Ribolsi</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Large Language Models, Long-Context Memory, Context Degradation</div></div><div class="row-side" data-en="2026 — <span class='pres'>present</span>" data-it="2026 — <span class='pres'>in corso</span>">2026 — <span class='pres'>present</span></div></div><details class="more-wrap reveal"><summary><span class="lbl-shut" data-en="Show all 25 MSc theses" data-it="Mostra tutte le 25 tesi magistrali">Show all 25 MSc theses</span><span class="lbl-open" data-en="Show fewer" data-it="Mostra meno">Show fewer</span><svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">A Multimodal Benchmark for Text-Guided Anomaly Detection</span></div><div class="rm">Teodora Jovanović</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Anomaly Detection, Vision-Language Models, Industrial Inspection</div></div><div class="row-side" data-en="2025 — 2026" data-it="2025 — 2026">2025 — 2026</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">TARDIS: Tabular Distillation and Inference-time Sampling framework</span></div><div class="rm">Filippo Balzarini &amp; Francesco Benelle</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Tabular Data, Knowledge Distillation, Inference-Time Sampling</div></div><div class="row-side" data-en="2025 — 2026" data-it="2025 — 2026">2025 — 2026</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">CONVERSE: Discovering Patient Groups in Survival Data via Deep Latent Clustering</span></div><div class="rm">Pinar Erbil</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Survival Analysis, Deep Latent Clustering, Patient Stratification</div></div><div class="row-side" data-en="2025 — 2026" data-it="2025 — 2026">2025 — 2026</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Generating ovarian cancer CT volumes via multimodal conditioning</span></div><div class="rm">Carlotta Pecchiari</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Medical Imaging, 3D Generation, Multimodal Conditioning</div></div><div class="row-side" data-en="2024 — 2026" data-it="2024 — 2026">2024 — 2026</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Enhancing Contrastive Learning with Synthetic Data from Text-to-Image Models</span></div><div class="rm">Leonardo Brusini</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Contrastive Learning, Synthetic Data, Text-to-Image Models</div></div><div class="row-side" data-en="2024 — 2025" data-it="2024 — 2025">2024 — 2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">A Generative Pipeline for High-Quality Synthetic Survival Datasets</span></div><div class="rm">Niccolò Maria Rizzi</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Synthetic Datasets, Survival Analysis, Generative Deep Learning</div></div><div class="row-side" data-en="2024 — 2025" data-it="2024 — 2025">2024 — 2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Neuro-Symbolic Conditioning for Synthetic Dataset Generation via GANs and Stable Diffusion</span></div><div class="rm">Giacomo Savazzi</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Neuro-Symbolic Models, Scene Graph Generation, Latent Diffusion</div></div><div class="row-side" data-en="2024 — 2025" data-it="2024 — 2025">2024 — 2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Text-Conditioned Knowledge Recycling: A Synthetic Dataset Generation Pipeline</span></div><div class="rm">Nicolò Francesco Resmini</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Text-Conditioned Diffusion, Knowledge Distillation, Membership Inference</div></div><div class="row-side" data-en="2024 — 2025" data-it="2024 — 2025">2024 — 2025</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">POMONAG: Pareto Optimal Many-Objective Neural Architecture Generator</span></div><div class="rm">Samuele Mariani &amp; Matteo Monti</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Neural Architecture Search, Pareto Optimality, Diffusion Models</div></div><div class="row-side" data-en="2023 — 2024" data-it="2023 — 2024">2023 — 2024</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Stable Diffusion Adaptation for Generation and Total Replacement of Real Data</span></div><div class="rm">Matteo D&rsquo;Oria</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Stable Diffusion, Dataset Synthesis, Classification Accuracy Score</div></div><div class="row-side" data-en="2023 — 2024" data-it="2023 — 2024">2023 — 2024</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">A Journey to Improve Neural Architecture Search: Neural Architecture Transfer and Once-For-All</span></div><div class="rm">Simone Sarti</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Neural Architecture Transfer, Once-For-All, Image Classification</div></div><div class="row-side" data-en="2022 — 2023" data-it="2022 — 2023">2022 — 2023</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Adversarial Privacy: Balancing Accuracy and Security in Deep Neural Networks</span></div><div class="rm">Francesca Ausonio</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Differential Privacy, Regularisation, Membership Inference</div></div><div class="row-side" data-en="2022 — 2023" data-it="2022 — 2023">2022 — 2023</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Bridging the Gap: Improving Classification Accuracy through Post-Processing Techniques</span></div><div class="rm">Andrea Lampis</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Generative Models, Classification Accuracy Score, Synthetic Images</div></div><div class="row-side" data-en="2022 — 2023" data-it="2022 — 2023">2022 — 2023</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Longitudinal Monitoring of Graphical Abilities, Towards the Early Diagnosis of Dysgraphia</span></div><div class="rm">Madhurii Gatto &amp; Matteo Bollettino</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Dysgraphia, Longitudinal Monitoring, Time-Series Embeddings</div></div><div class="row-side" data-en="2021 — 2022" data-it="2021 — 2022">2021 — 2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">On Dysgraphia Diagnosis Support via the Automation of the BVSCO Test Scoring &mdash; KTH</span></div><div class="rm">Riccardo Sommaruga</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Dysgraphia Screening, Handwriting Analysis, Automated Scoring</div></div><div class="row-side" data-en="2021 — 2022" data-it="2021 — 2022">2021 — 2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Machine Learning-Based Analysis of Spontaneous Speech to Monitor Cognitive Decline</span></div><div class="rm">Chiara Giangregorio</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Acoustic Features, Cognitive Decline, Speech Analysis</div></div><div class="row-side" data-en="2021 — 2022" data-it="2021 — 2022">2021 — 2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Deep Neural Networks for Time Series Forecasting Beyond Transformers</span></div><div class="rm">Riccardo Ughi</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Time-Series Forecasting, Transformers, Deep Learning</div></div><div class="row-side" data-en="2021 — 2022" data-it="2021 — 2022">2021 — 2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">Unsupervised Activities and Age Monitoring via Smart Ink Pen</span></div><div class="rm">Maria Paola D&rsquo;Ercole</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Handwriting Analysis, Ageing, Smart Ink Pen</div></div><div class="row-side" data-en="2021 — 2022" data-it="2021 — 2022">2021 — 2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">POPNASv2: Efficient Neural Architecture Search Through Time-Accuracy Optimization</span></div><div class="rm">Andrea Falanti</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Neural Architecture Search, Pareto Optimality, Image Classification</div></div><div class="row-side" data-en="2021 — 2022" data-it="2021 — 2022">2021 — 2022</div></div><div class="row compact reveal"><div class="row-main"><div class="titleline"><span class="rt">On the Resilience and Protection of Regularization Techniques in Differential Privacy</span></div><div class="rm">Marco Giammarresi</div><div class="kw"><span class="kw-lab" data-en="Keywords" data-it="Parole chiave">Keywords</span>: Differential Privacy, Regularisation, Privacy Attacks</div></div><div class="row-side" data-en="2021 — 2022" data-it="2021 — 2022">2021 — 2022</div></div></details></section>
+<section id="contact"><h2 class="reveal" data-en="Contact" data-it="Contatti">Contact</h2><p class="lede reveal" data-en="If these topics resonate with you &mdash; for a discussion or a collaboration, in academia as well as in the entrepreneurial world &mdash; I&rsquo;d be glad to hear from you." data-it="Se questi temi ti interessano &mdash; per un confronto o una collaborazione, nel mondo della ricerca cos&igrave; come in quello imprenditoriale &mdash; sar&ograve; lieto di sentirti.">If these topics resonate with you &mdash; for a discussion or a collaboration, in academia as well as in the entrepreneurial world &mdash; I&rsquo;d be glad to hear from you.</p><p class="reveal" style="margin:22px 0 0"><a class="btn" href="mailto:eugenio.lomurno@polimi.it?subject=Contact%20from%20your%20website" data-en="✉ Email me" data-it="✉ Scrivimi">✉ Email me</a></p></section>
+<footer><span data-en="Milano, Italy" data-it="Milano, Italia">Milano, Italy</span><span class="dot">|</span><a href="mailto:eugenio.lomurno@polimi.it">eugenio.lomurno@polimi.it</a><span class="dot">|</span><span>&copy; <span id="y"></span> Eugenio Lomurno</span></footer>
 </div>
-
-<div class="wrap">
-  <header>
-    <div class="avatar"><img src="photo.jpg" alt="Eugenio Lomurno"></div>
-    <div>
-      <h1>Eugenio Lomurno</h1>
-      <p class="role" data-i18n="role">Postdoctoral Fellow · AIRLab, DEIB, Politecnico di Milano</p>
-      <div class="links">
-        <a href="https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://www.scopus.com/authid/detail.uri?authorId=57226274677" target="_blank" rel="noopener">Scopus</a>
-        <a href="https://orcid.org/0000-0003-4007-3207" target="_blank" rel="noopener">ORCID</a>
-        <a href="https://www.linkedin.com/in/eugenio-lomurno-a28b12162/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/tacchinoleso/" target="_blank" rel="noopener">Instagram</a>
-        <a class="btn" href="CV_Eugenio_Lomurno.pdf" download data-i18n="cvbtn">↓ Download CV</a>
-      </div>
-    </div>
-  </header>
-
-  <section>
-    <h2 data-i18n="h_about">About</h2>
-    <p data-i18n="about1">I am a postdoctoral fellow in the AIRLab group at the Department of Electronics, Information and
-       Bioengineering (DEIB), Politecnico di Milano, where I completed my PhD in Information Technology
-       <em>cum laude</em> in 2025. Today my research develops along three interconnected directions:</p>
-    <ul class="themes" data-i18n="themes">
-      <li><strong>Privacy through synthetic data</strong> and their secure sharing — training and exchanging models without ever exposing the people behind the data.</li>
-      <li><strong>Synthetic data that surpass real data</strong> — generating data that are not merely a safe substitute, but more useful and informative for the AI models that learn from them.</li>
-      <li><strong>A European, Human-Centered vision of AI</strong> — with people, society and the environment as its ultimate ends, as a constructive counterpoint to the prevailing American and Chinese approaches.</li>
-    </ul>
-    <p data-i18n="about2">My research has grown within the H2020 <a href="https://doi.org/10.3030/101016112" target="_blank" rel="noopener">ESSENCE</a> and <a href="https://cordis.europa.eu/project/id/101016577" target="_blank" rel="noopener">AI-SPRINT</a> projects and the PNRR <a href="https://fondazione-fair.it/" target="_blank" rel="noopener">FAIR</a> project, and continues today — in the Lombardy-funded <em>PREDICT</em> project — with cutting-edge generative techniques for synthesising medical-imaging data of rare tumours. I am also part of the <a href="https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/" target="_blank" rel="noopener">SEL</a> (Smart Eyewear Lab), a joint research centre of EssilorLuxottica and Politecnico di Milano.</p>
-    <div class="chips">
-      <span class="chip" data-i18n="chip1">Generative Deep Learning</span>
-      <span class="chip" data-i18n="chip2">Privacy-Preserving Deep Learning</span>
-      <span class="chip" data-i18n="chip3">Multimodal Deep Learning</span>
-      <span class="chip" data-i18n="chip4">Human-Centered AI</span>
-      <span class="chip" data-i18n="chip5">Federated Learning</span>
-      <span class="chip" data-i18n="chip6">Edge-Oriented Neural Architecture Search</span>
-    </div>
-  </section>
-
-  <section>
-    <h2 data-i18n="h_glance">At a glance</h2>
-    <div class="metrics">
-      <div class="metric"><b data-count-dual="12 / 8">0 / 0</b><span data-i18n="m_h">h-index<br>(Scholar / Scopus)</span></div>
-      <div class="metric"><b data-count="330" data-suffix="+">0</b><span data-i18n="m_c">Citations<br>(Google Scholar)</span></div>
-      <div class="metric"><b data-count="30">0</b><span data-i18n="m_p">Publications<br>(13 A+ / Q1)</span></div>
-      <div class="metric"><b data-count="5">0</b><span data-i18n="m_pr">Research projects<br>& JRP</span></div>
-      <div class="metric"><b data-count-dual="5 / 8">0 / 0</b><span data-i18n="m_co">Courses<br>(University / Corporate)</span></div>
-      <div class="metric"><b data-count="20">0</b><span data-i18n="m_t">M.Sc. theses<br>(co-)supervised</span></div>
-    </div>
-  </section>
-
-  <section>
-    <h2 data-i18n="h_high">Highlights</h2>
-    <div class="award"><span class="dot">★</span><div data-i18n="award1"><strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.</div></div>
-    <div class="award"><span class="dot">★</span><div data-i18n="award2"><strong>PhD awarded <em>cum laude</em></strong> — Politecnico di Milano, 2025.</div></div>
-  </section>
-
-  <section>
-    <h2 data-i18n="h_thesis">PhD Thesis</h2>
-    <p class="pub"><span class="t">Adversarial and Generative Deep Learning for Data Privacy in Human-Centered Artificial Intelligence</span><br>
-       <span class="v" data-i18n="thesis_meta">Politecnico di Milano, 2025 (cum laude). Supervisor: Prof. Matteo Matteucci.</span><br>
-       <a href="https://www.politesi.polimi.it/handle/10589/238117" target="_blank" rel="noopener" data-i18n="thesis_link">Read on POLITesi →</a></p>
-  </section>
-
-  <section>
-    <h2 data-i18n="h_pubs">Selected Publications</h2>
-    <div class="pub"><span class="tag j" data-i18n="tag_j">Journal</span><span class="t"><a href="https://doi.org/10.1016/j.imavis.2025.105727" target="_blank" rel="noopener">Your Image Generator Is Your New Private Dataset</a></span><br><span class="v">N. Resmini, <strong>E. Lomurno</strong>, C. Sbrolli, M. Matteucci · Image and Vision Computing, 2025</span></div>
-    <div class="pub"><span class="tag j" data-i18n="tag_j">Journal</span><span class="t"><a href="https://doi.org/10.1016/j.patrec.2025.02.030" target="_blank" rel="noopener">Federated Knowledge Recycling: Privacy-Preserving Synthetic Data Sharing</a></span><br><span class="v"><strong>E. Lomurno</strong>, M. Matteucci · Pattern Recognition Letters, 2025</span></div>
-    <div class="pub"><span class="tag j" data-i18n="tag_j">Journal</span><span class="t"><a href="https://doi.org/10.1016/j.patrec.2025.02.003" target="_blank" rel="noopener">Synthetic Image Learning: Preserving Performance and Preventing Membership Inference Attacks</a></span><br><span class="v"><strong>E. Lomurno</strong>, M. Matteucci · Pattern Recognition Letters, 2025</span></div>
-    <div class="pub"><span class="tag c" data-i18n="tag_c">Conference</span><span class="t"><a href="https://papers.bmvc2023.org/0715.pdf" target="_blank" rel="noopener">Bridging the Gap: Enhancing the Utility of Synthetic Data via Post-Processing Techniques</a></span><br><span class="v">A. Lampis, <strong>E. Lomurno</strong>, M. Matteucci · BMVC, 2023</span></div>
-    <div class="pub"><span class="tag j" data-i18n="tag_j">Journal</span><span class="t"><a href="https://doi.org/10.1016/j.asoc.2023.110555" target="_blank" rel="noopener">POPNASv3: A Pareto-Optimal Neural Architecture Search Solution for Image and Time Series Classification</a></span><br><span class="v">A. Falanti, <strong>E. Lomurno</strong>, D. Ardagna, M. Matteucci · Applied Soft Computing, 2023</span></div>
-    <p style="margin-top:16px"><a href="https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it" target="_blank" rel="noopener" data-i18n="pubs_all">Full publication list on Google Scholar →</a></p>
-  </section>
-
-  <section>
-    <h2 data-i18n="h_contact">Contact</h2>
-    <p data-i18n="contact_p">If these topics resonate with you — for a discussion or a collaboration, in academia as well as in the entrepreneurial world — I’d be glad to hear from you.</p>
-    <a class="btn" href="mailto:eugenio.lomurno@polimi.it?subject=Contact%20from%20your%20website" data-i18n="email_btn">✉ Email me</a>
-  </section>
-
-  <footer>
-    <span data-i18n="loc">Milano, Italy</span><span>·</span>
-    <a href="mailto:eugenio.lomurno@polimi.it">eugenio.lomurno@polimi.it</a><span>·</span>
-    <span>© <span id="y"></span> Eugenio Lomurno</span>
-  </footer>
-</div>
-
 <script>
-  var I18N={
-    en:{
-      role:"Postdoctoral Fellow · AIRLab, DEIB, Politecnico di Milano",
-      cvbtn:"↓ Download CV",
-      h_about:"About",
-      about1:"I am a postdoctoral fellow in the AIRLab group at the Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, where I completed my PhD in Information Technology <em>cum laude</em> in 2025. Today my research develops along three interconnected directions:",
-      themes:"<li><strong>Privacy through synthetic data</strong> and their secure sharing — training and exchanging models without ever exposing the people behind the data.</li><li><strong>Synthetic data that surpass real data</strong> — generating data that are not merely a safe substitute, but more useful and informative for the AI models that learn from them.</li><li><strong>A European, Human-Centered vision of AI</strong> — with people, society and the environment as its ultimate ends, as a constructive counterpoint to the prevailing American and Chinese approaches.</li>",
-      about2:"My research has grown within the H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> and <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> projects and the PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a> project, and continues today — in the Lombardy-funded <em>PREDICT</em> project — with cutting-edge generative techniques for synthesising medical-imaging data of rare tumours. I am also part of the <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), a joint research centre of EssilorLuxottica and Politecnico di Milano.",
-      chip1:"Generative Deep Learning", chip2:"Privacy-Preserving Deep Learning", chip3:"Multimodal Deep Learning", chip4:"Human-Centered AI", chip5:"Federated Learning", chip6:"Edge-Oriented Neural Architecture Search",
-      h_glance:"At a glance",
-      m_h:"h-index<br>(Scholar / Scopus)", m_c:"Citations<br>(Google Scholar)", m_p:"Publications<br>(13 A+ / Q1)", m_pr:"Research projects<br>& JRP", m_co:"Courses<br>(University / Corporate)", m_t:"M.Sc. theses<br>(co-)supervised",
-      h_high:"Highlights",
-      award1:"<strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.",
-      award2:"<strong>PhD awarded <em>cum laude</em></strong> — Politecnico di Milano, 2025.",
-      h_thesis:"PhD Thesis",
-      thesis_meta:"Politecnico di Milano, 2025 (cum laude). Supervisor: Prof. Matteo Matteucci.",
-      thesis_link:"Read on POLITesi →",
-      h_pubs:"Selected Publications", tag_j:"Journal", tag_c:"Conference",
-      pubs_all:"Full publication list on Google Scholar →",
-      h_contact:"Contact",
-      contact_p:"If these topics resonate with you — for a discussion or a collaboration, in academia as well as in the entrepreneurial world — I’d be glad to hear from you.",
-      email_btn:"✉ Email me",
-      loc:"Milano, Italy"
-    },
-    it:{
-      role:"Assegnista di ricerca · AIRLab, DEIB, Politecnico di Milano",
-      cvbtn:"↓ Scarica il CV",
-      h_about:"Chi sono",
-      about1:"Sono un assegnista di ricerca nel gruppo AIRLab del Dipartimento di Elettronica, Informazione e Bioingegneria (DEIB) del Politecnico di Milano, dove nel 2025 ho conseguito il dottorato in Information Technology <em>con lode</em>. Oggi la mia ricerca si sviluppa lungo tre direzioni interconnesse:",
-      themes:"<li><strong>La privacy attraverso i dati sintetici</strong> e la loro condivisione sicura — addestrare e scambiare modelli senza mai esporre le persone dietro ai dati.</li><li><strong>Dati sintetici migliori dei dati reali</strong> — generare dati che non siano solo un sostituto sicuro, ma più utili e informativi per i modelli di IA che li apprendono.</li><li><strong>Una visione europea e Human-Centered dell’IA</strong> — con l'essere umano, la società e l'ambiente come fini ultimi, in contrapposizione costruttiva agli approcci statunitensi e cinesi.</li>",
-      about2:"La mia ricerca è cresciuta all'interno dei progetti H2020 <a href='https://doi.org/10.3030/101016112' target='_blank' rel='noopener'>ESSENCE</a> e <a href='https://cordis.europa.eu/project/id/101016577' target='_blank' rel='noopener'>AI-SPRINT</a> e nel progetto PNRR <a href='https://fondazione-fair.it/' target='_blank' rel='noopener'>FAIR</a>, e prosegue oggi — nel progetto <em>PREDICT</em> finanziato da Regione Lombardia — con tecniche generative all’avanguardia per sintetizzare immagini mediche di tumori rari. Faccio inoltre parte dello <a href='https://www.essilorluxottica.com/it/careers/smart-eyewear-lab/' target='_blank' rel='noopener'>SEL</a> (Smart Eyewear Lab), centro di ricerca congiunto di EssilorLuxottica e Politecnico di Milano.",
-      chip1:"Deep Learning Generativo", chip2:"Deep Learning per la Privacy", chip3:"Deep Learning Multimodale", chip4:"Human-Centered AI", chip5:"Federated Learning", chip6:"Neural Architecture Search per l’Edge",
-      h_glance:"In sintesi",
-      m_h:"h-index<br>(Scholar / Scopus)", m_c:"Citazioni<br>(Google Scholar)", m_p:"Pubblicazioni<br>(13 A+ / Q1)", m_pr:"Progetti di ricerca<br>e JRP", m_co:"Corsi<br>(Università / Azienda)", m_t:"Tesi magistrali<br>(co-)seguite",
-      h_high:"Riconoscimenti",
-      award1:"<strong>Leonardo Fibonacci Best Paper Award</strong> — International Conference on Machine Learning, Optimization, and Data Science (LOD), 2025.",
-      award2:"<strong>Dottorato conseguito <em>con lode</em></strong> — Politecnico di Milano, 2025.",
-      h_thesis:"Tesi di dottorato",
-      thesis_meta:"Politecnico di Milano, 2025 (con lode). Relatore: Prof. Matteo Matteucci.",
-      thesis_link:"Leggi su POLITesi →",
-      h_pubs:"Pubblicazioni selezionate", tag_j:"Rivista", tag_c:"Conferenza",
-      pubs_all:"Elenco completo su Google Scholar →",
-      h_contact:"Contatti",
-      contact_p:"Se questi temi ti interessano — per un confronto o una collaborazione, nel mondo della ricerca così come in quello imprenditoriale — sarò lieto di sentirti.",
-      email_btn:"✉ Scrivimi",
-      loc:"Milano, Italia"
-    }
-  };
-  function applyLang(l){
-    if(!I18N[l]) l='en';
-    document.documentElement.setAttribute('lang',l);
-    document.querySelectorAll('[data-i18n]').forEach(function(el){
-      var k=el.getAttribute('data-i18n'); if(I18N[l][k]!=null) el.innerHTML=I18N[l][k];
-    });
-    try{localStorage.setItem('lang',l)}catch(e){}
-  }
-  function setLangLabel(){var l=document.documentElement.getAttribute('lang');document.getElementById('langLbl').textContent=(l==='en'?'IT':'EN');}
-  var langBtn=document.getElementById('langBtn');
-  langBtn.addEventListener('click',function(){
-    var cur=document.documentElement.getAttribute('lang');
-    applyLang(cur==='en'?'it':'en'); setLangLabel();
-    langBtn.classList.remove('spin'); void langBtn.offsetWidth; langBtn.classList.add('spin');
-  });
-  langBtn.addEventListener('animationend',function(){langBtn.classList.remove('spin');});
-  applyLang('en'); setLangLabel();
 
-  document.getElementById('y').textContent=new Date().getFullYear();
-  document.getElementById('themeBtn').addEventListener('click',function(){
-    var cur=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
-    document.documentElement.setAttribute('data-theme',cur);
-    try{localStorage.setItem('theme',cur)}catch(e){}
+document.getElementById('y').textContent=new Date().getFullYear();
+/* i controlli esistono due volte (barra + tendina): li piloto per classe, non per id */
+function $$(s){return [].slice.call(document.querySelectorAll(s))}
+/* la barra passa alla tendina appena una voce non ci sta piu: misurata, non a breakpoint fisso */
+function fitNav(){
+  var bar=document.querySelector('.tb-in'); if(!bar)return;
+  bar.classList.remove('collapsed');
+  if(bar.scrollWidth > bar.clientWidth + 1) bar.classList.add('collapsed');
+}
+fitNav();
+addEventListener('resize', fitNav);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
+
+/* menu a tendina: chiudi al click su una voce, fuori, o con Esc */
+(function(){
+  var m=document.getElementById('navMenu'); if(!m)return;
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')m.removeAttribute('open')});
+  document.addEventListener('click',function(e){if(!m.contains(e.target))m.removeAttribute('open')});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')m.removeAttribute('open')});
+})();
+/* rotazione: togli la classe, forza un reflow, rimettila — cosi riparte a ogni click */
+function spin(el){
+  try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return}catch(e){}
+  el.classList.remove('spin'); void el.offsetWidth; el.classList.add('spin');
+}
+$$('.tbtn').forEach(function(b){
+  b.addEventListener('animationend',function(){b.classList.remove('spin')});
+});
+$$('.js-theme').forEach(function(b){b.addEventListener('click',function(){
+  var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',c);
+  try{localStorage.setItem('el-theme',c)}catch(e){}
+  spin(b);
+})});
+(function(){
+  var btns=$$('.js-lang'); if(!btns.length)return;
+  function cur(){return document.documentElement.getAttribute('lang')==='it'?'it':'en'}
+  function apply(l){
+    document.documentElement.setAttribute('lang',l);
+    $$('[data-en]').forEach(function(el){
+      var v=el.getAttribute('data-'+l); if(v!==null)el.innerHTML=v;
+    });
+    $$('[data-en-attr]').forEach(function(el){
+      var spec=el.getAttribute('data-'+l+'-attr'); if(!spec)return;
+      var i=spec.indexOf(':'); el.setAttribute(spec.slice(0,i),spec.slice(i+1));
+    });
+    btns.forEach(function(b){b.textContent=(l==='en'?'IT':'EN')});
+    if(typeof fitNav==='function')fitNav();
+    try{localStorage.setItem('el-lang',l)}catch(e){}
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    apply(cur()==='en'?'it':'en'); spin(b);
+  })});
+  apply(cur());
+})();
+
+(function(){
+  var reduce=false;
+  try{reduce=matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+
+  /* ---- apparizione delle sezioni ---- */
+  var revs=[].slice.call(document.querySelectorAll('.reveal'));
+  if(!('IntersectionObserver' in window)||reduce){
+    revs.forEach(function(el){el.classList.add('in')});
+  }else{
+    var ro=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        var el=e.target, sibs=[].slice.call(el.parentNode.children).filter(function(n){
+          return n.classList&&n.classList.contains('reveal')});
+        var i=sibs.indexOf(el);
+        el.style.setProperty('--d',Math.min(i,6)*55+'ms');
+        el.classList.add('in'); ro.unobserve(el);
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    revs.forEach(function(el){ro.observe(el)});
+  }
+
+  /* ---- contatori ---- */
+  function ease(t){return 1-Math.pow(1-t,3)}
+  function run(el){
+    var raw=el.getAttribute('data-count')||'', suf=el.getAttribute('data-suffix')||'';
+    var parts=raw.split('/').map(function(s){return parseFloat(s.trim())});
+    if(parts.some(isNaN)){el.textContent=raw+suf;return}
+    var t0=null, D=1100;
+    function frame(ts){
+      if(t0===null)t0=ts;
+      var p=Math.min((ts-t0)/D,1), k=ease(p);
+      el.textContent=parts.map(function(v){return Math.round(v*k)}).join(' / ')+(p===1?suf:'');
+      if(p<1)requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  var counters=[].slice.call(document.querySelectorAll('[data-count]'));
+  if(!('IntersectionObserver' in window)||reduce){
+    counters.forEach(function(el){
+      el.textContent=el.getAttribute('data-count')+(el.getAttribute('data-suffix')||'');
+      el.classList.add('ready');
+    });
+  }else{
+    var co=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){run(e.target);co.unobserve(e.target)}});
+    },{threshold:.5});
+    counters.forEach(function(el){
+      /* azzera prima di mostrare: evita il salto valore-reale -> 0 */
+      var n=(el.getAttribute('data-count')||'').split('/').length;
+      el.textContent=n>1?'0 / 0':'0';
+      el.classList.add('ready');
+      co.observe(el);
+    });
+  }
+
+  /* ---- sezione attiva nella nav ---- */
+  /* una voce di nav copre piu sezioni: costruisco la mappa sezione -> voce */
+  var links={};
+  [].forEach.call(document.querySelectorAll('.nav a'),function(a){
+    var m=(a.getAttribute('data-sections')||a.getAttribute('href').slice(1)).split(' ');
+    m.forEach(function(id){links[id]=a});
   });
-  document.querySelectorAll('[data-count]').forEach(function(el){
-    var target=+el.getAttribute('data-count'), suf=el.getAttribute('data-suffix')||'';
-    var n=0, step=Math.max(1,Math.ceil(target/45));
-    var id=setInterval(function(){ n+=step; if(n>=target){n=target;clearInterval(id);} el.textContent=n+suf; },22);
-  });
-  document.querySelectorAll('[data-count-dual]').forEach(function(el){
-    var p=el.getAttribute('data-count-dual').split('/');
-    var t1=+p[0], t2=+p[1];
-    var n1=0, n2=0, s1=Math.max(1,Math.ceil(t1/45)), s2=Math.max(1,Math.ceil(t2/45));
-    var id=setInterval(function(){
-      n1+=s1; if(n1>t1)n1=t1;
-      n2+=s2; if(n2>t2)n2=t2;
-      el.textContent=n1+' / '+n2;
-      if(n1>=t1&&n2>=t2)clearInterval(id);
-    },22);
-  });
+  if('IntersectionObserver' in window){
+    var no=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        var a=links[e.target.id]; if(!a||!e.isIntersecting)return;
+        for(var k in links)links[k].classList.remove('on');
+        a.classList.add('on');
+      });
+    },{rootMargin:'-58px 0px -70% 0px'});
+    [].forEach.call(document.querySelectorAll('section[id]'),function(s){no.observe(s)});
+  }
+})();
 </script>
 </body>
 </html>

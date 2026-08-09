@@ -1,0 +1,165 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Modifications by:
+% Junhao Dong <junhao.dong96@gmail.com>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\definecolor{awesome}{HTML}{C96442}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+\definecolor{darktext}{HTML}{2B2926}
+\definecolor{text}{HTML}{2B2926}
+\definecolor{graytext}{HTML}{857C70}
+\definecolor{lighttext}{HTML}{B0A89C}
+
+% Barely-perceptible warm page tint (Claude-like), all pages
+\definecolor{pagebg}{HTML}{FAF9F5}
+\pagecolor{pagebg}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+% --- Header restyle (balanced look, matching the website) ---
+\renewcommand*{\headerfirstnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\bfseries\color{darktext} #1}}
+\renewcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\bfseries\color{awesome} #1}}
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{8.5pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\renewcommand*{\headersocialstyle}[1]{{\fontsize{9.2pt}{1em}\headerfont\color{text} #1}}
+
+% --- Toggle: profile photo on/off ---
+\newif\ifcvphoto
+\cvphotofalse   %% change to \cvphotofalse for a no-photo, fully centered header
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% niente foto nell'intestazione: il file profile.jpg e in non-usati/
+\name{Eugenio}{Lomurno}
+\position{Postdoctoral Fellow \enskip\textbar\enskip AIRLab, DEIB, Politecnico di Milano}
+% \address{Via A. Stoppani 34, Milan (MI), Italy}
+% \mobile{(+39) 3920831613}
+\email{eugenio.lomurno@polimi.it}
+% \homepage{homepage}
+% \github{EugenioTL}
+% \linkedin{eugenio-lomurno-a28b12162}  %% shown via \extrainfo (mbox, short label)
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+\extrainfo{%
+  \mbox{\href{https://www.linkedin.com/in/eugenio-lomurno-a28b12162}{\faLinkedin\acvHeaderIconSep LinkedIn}}\acvHeaderSocialSep%
+  \mbox{\href{https://www.instagram.com/tacchinoleso/}{\faInstagram\acvHeaderIconSep Instagram}}\acvHeaderSocialSep%
+  \mbox{\href{https://scholar.google.com/citations?user=7VpjbGoAAAAJ&hl=it}{\aiGoogleScholar\acvHeaderIconSep Scholar}}\acvHeaderSocialSep%
+  \mbox{\href{https://www.scopus.com/authid/detail.uri?authorId=57226274677}{\aiScopus\acvHeaderIconSep Scopus}}\acvHeaderSocialSep%
+  \mbox{\href{https://orcid.org/0000-0003-4007-3207}{\aiOrcid\acvHeaderIconSep ORCID}}%
+}
+
+\usepackage{xcolor}
+  \definecolor{myblue}{HTML}{C96442}
+\usepackage{acronym}
+  \renewcommand*{\acsfont}[1]{\textcolor{myblue}{#1}}
+\usepackage{academicons}
+\usepackage{hyperref}
+  \hypersetup{
+     colorlinks=true,
+     linkcolor=myblue,
+     urlcolor=myblue,
+     %citecolor=myblue,
+   }
+
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+{\hypersetup{urlcolor=darktext}\makecvheader[C]}\hypersetup{urlcolor=myblue}
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Junhao Dong~~~·~~~Résumé}
+%   {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% \input{resume/about}
+\input{resume/education}
+\input{resume/thesis}
+\newpage
+\input{resume/journalpublications}
+\newpage
+\input{resume/conferencepublications}
+\newpage
+\input{resume/awards_and_prizes}
+\input{resume/projects}
+\input{resume/tutoring}
+\input{resume/supervision}
+\input{resume/competitions}
+% \newpage
+% \input{resume/tech_skills}
+% \input{resume/soft_skills}
+% \input{resume/languages}
+
+% \vspace{17mm}
+
+\newpage
+
+
+% Per Politecnico di Milano
+
+Autorizzo al trattamento dati ai sensi del GDPR 2016/679 del 27 aprile 2016 (Regolamento Europeo relativo alla protezione delle persone fisiche per quanto riguarda il trattamento dei dati personali).
+
+Autorizzo la pubblicazione del Curriculum Vitae sul sito istituzionale del Politecnico di Milano (sez. Amministrazione Trasparente) in ottemperanza al D. Lgs n. 33 del 14 marzo 2013 (e s.m.i.).
+
+
+
+% Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base all’art. 13 del GDPR 679/16
+
+% Il sottoscritto, Eugenio Lomurno, consapevole delle sanzioni penali previste dall’art. 76 T.U. N. 445 del 28.12.2000 sulle disposizioni legislative e regolamentari in materia di documentazione amministrativa nel caso di mendaci dichiarazioni o esibizione di atti falsi o contenenti dati non rispondenti a verità, dichiara sotto la propria responsabilità che quanto sopra riportato risponde a verità.
+
+
+\end{document}
