@@ -81,6 +81,7 @@ UI = {
 PROFILE = {
     "name": "Eugenio Lomurno",
     "email": "eugenio.lomurno@polimi.it",
+    "site": "eugeniolomurno.github.io",
     "photo": "photo.jpg",
     "affiliation": {"en": "AIRLab | DEIB | Politecnico di Milano",
                     "it": "AIRLab | DEIB | Politecnico di Milano"},

@@ -167,11 +167,14 @@ def header(lang):
 \endgroup
 \par\vspace{3.0mm}{\color{awesome}\hrule height 1.1pt}\vspace{3.2mm}
 
-\noindent\begin{minipage}[c]{0.52\textwidth}\raggedright
+\noindent\begin{minipage}[c]{0.70\textwidth}\raggedright
   \href{mailto:%(mail)s}{{\fontsize{%(is)s}{1em}\selectfont\textcolor{awesome}{\faEnvelopeO}}%%
-    \hspace{0.40em}\raisebox{0.10em}{\fontsize{%(ms)s}{1em}\bodyfont\color{darktext}%(mail)s}}
+    \hspace{0.40em}\raisebox{0.10em}{\fontsize{%(ms)s}{1em}\bodyfont\color{darktext}%(mail)s}}%%
+  \hspace{1.0em}%%
+  \href{https://%(site)s}{{\fontsize{%(is)s}{1em}\selectfont\textcolor{awesome}{\faGlobe}}%%
+    \hspace{0.40em}\raisebox{0.10em}{\fontsize{%(ms)s}{1em}\bodyfont\color{darktext}%(site)s}}
 \end{minipage}\hfill
-\begin{minipage}[c]{0.44\textwidth}\raggedleft
+\begin{minipage}[c]{0.28\textwidth}\raggedleft
   %(marks)s
 \end{minipage}
 
@@ -180,7 +183,7 @@ def header(lang):
 %%%% hyperref colora il totale d'accento, lasciando i due numeri di colore diverso.
 \makecvfooter{}{}{\thepage\;/\;\pageref*{LastPage}}
 """ % {"ls": step(3), "is": "14pt", "ms": "10.5pt", "first": first, "last": last,
-       "mail": mail, "marks": marks}
+       "mail": mail, "site": D.PROFILE["site"], "marks": marks}
 
 
 PREAMBLE = r"""
@@ -805,6 +808,7 @@ SHIMS = {
 \RequirePackage{fontspec}
 \newfontfamily\FAshim[Path=fonts/,Extension=.ttf]{FontAwesome}
 \newcommand*{\faStar}{{\FAshim\symbol{"F005}}}
+\newcommand*{\faGlobe}{{\FAshim\symbol{"F0AC}}}
 \newcommand*{\faLinkedin}{{\FAshim\symbol{"F0E1}}}
 \newcommand*{\faInstagram}{{\FAshim\symbol{"F16D}}}
 \newcommand*{\faEnvelopeO}{{\FAshim\symbol{"F003}}}
