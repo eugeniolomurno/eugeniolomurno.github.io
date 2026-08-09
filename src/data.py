@@ -413,6 +413,12 @@ EDUCATION = [
                 "it": "2019 \u2014 <span class='pres'>in corso</span>"}},
     {"degree": {"en": "AIRLab Social Media Manager",
                 "it": "Social Media Manager dell'AIRLab"},
+     # i canali che gestisce: nome del profilo, non l'indirizzo per esteso, che su
+     # carta occuperebbe due righe e nessuno digiterebbe
+     "channels": [("linkedin", "airlab-polimi",
+                   "https://www.linkedin.com/company/airlab-polimi/"),
+                  ("instagram", "airlab_polimi",
+                   "https://www.instagram.com/airlab_polimi/")],
      "inst": "AIRLab, DEIB, Politecnico di Milano",
      "period": {"en": "2024 \u2014 <span class='pres'>present</span>",
                 "it": "2024 \u2014 <span class='pres'>in corso</span>"}},

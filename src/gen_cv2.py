@@ -608,17 +608,6 @@ def education_col(lang):
     return "\n".join(o)
 
 
-# I canali che gestisce, sotto l'incarico. Non l'indirizzo per esteso: su carta un URL
-# lungo occupa due righe e non si legge, mentre il nome del profilo si ritrova comunque
-# cercandolo. Il collegamento resta attivo sul testo.
-_SOC = [(r"\faLinkedin", "airlab-polimi", "https://www.linkedin.com/company/airlab-polimi/"),
-        (r"\faInstagram", "airlab\\_polimi", "https://www.instagram.com/airlab_polimi/")]
-SOCIAL_LINKS = (r"{\fontsize{" + FS_SMALL + r"}{1.25em}\bodyfont\color{darktext}" +
-                r"\hspace{0.9em}".join(
-                    r"\href{%s}{\textcolor{awesome}{%s}\hspace{0.32em}%s}" % (u, i, t)
-                    for i, t, u in _SOC) + r"}\par")
-
-
 def experience_col(lang):
     """Incarichi, dal piu recente. Le due voci AIRLab vengono da data.py, la terza
     dal CV perche solo li c'e la data al mese."""
@@ -627,7 +616,15 @@ def experience_col(lang):
     out = [_entry(tex(post["degree"][lang]), tex(post["inst"]),
                   tex(D.period_of(post["period"], lang)))]
     for e in reversed(air):                      # Social Media Manager, poi Member
-        extra = SOCIAL_LINKS if "Social Media" in e["degree"]["en"] else ""
+        # i canali vengono da data.py, come sul sito: una fonte sola
+        extra = ""
+        if e.get("channels"):
+            extra = (r"{\fontsize{" + FS_SMALL + r"}{1.25em}\bodyfont\color{darktext}" +
+                     r"\hspace{0.9em}".join(
+                         r"\href{%s}{\textcolor{awesome}{%s}\hspace{0.32em}%s}"
+                         % (u, {"linkedin": r"\faLinkedin",
+                                "instagram": r"\faInstagram"}[ic], tex(h))
+                         for ic, h, u in e["channels"]) + r"}\par")
         out.append(_entry(tex(e["degree"][lang]), tex(e["inst"]),
                           tex(D.period_of(e["period"], lang)), extra))
     return "\n".join(out)

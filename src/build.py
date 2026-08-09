@@ -271,6 +271,13 @@ def section(w, key, lay):
                 if e.get("thesis"):
                     w('<div class="kw">%s: <a href="%s" target="_blank" rel="noopener">%s</a></div>'
                       % (bi("span", D.UI["thesis_lab"], "kw-lab"), e["thesis_url"], e["thesis"]))
+                # i canali gestiti, con il marchio e il nome del profilo
+                if e.get("channels"):
+                    w('<div class="chans">')
+                    for ic, handle, url in e["channels"]:
+                        w('<a class="chan" href="%s" target="_blank" rel="noopener" '
+                          'aria-label="%s">%s<span>%s</span></a>' % (url, handle, ICONS[ic], handle))
+                    w('</div>')
                 w('</div>')
                 w(bi("div", e["period"], "row-side"))
                 w('</div>')

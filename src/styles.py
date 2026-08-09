@@ -226,6 +226,14 @@ details[open].more-wrap summary .lbl-shut{display:none}
 details[open].more-wrap summary .lbl-open{display:inline}
 
 /* ---------- filetto etichettato (separa dottorato e magistrali) ---------- */
+/* canali gestiti, sotto l'incarico: marchio in accento e nome del profilo */
+.chans{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:5px}
+.chan{display:inline-flex;align-items:center;gap:6px;font-size:var(--fs-meta);
+      color:var(--muted);border-bottom:none}
+.chan svg{width:13px;height:13px;flex:0 0 auto;color:var(--accent)}
+.chan span{border-bottom:1px solid transparent;transition:border-color .18s,color .18s}
+.chan:hover span{color:var(--fg);border-bottom-color:var(--accent)}
+
 /* Esperienza e formazione in due colonne, come sul CV. Il filetto verticale separa
    le due senza aggiungere un secondo titolo di sezione. */
 .twocol{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(22px,3.2vw,38px)}
