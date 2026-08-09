@@ -40,7 +40,7 @@ UI = {
     "t_teaching":    {"en": "Teaching Activities",      "it": "Attività didattica"},
     "t_supervision": {"en": "Supervisions",             "it": "Supervisioni"},
     "t_awards":      {"en": "Awards and Achievements",  "it": "Riconoscimenti e risultati"},
-    "t_education":   {"en": "Experience and Education", "it": "Esperienza e formazione"},
+    "t_education":   {"en": "Education and Experience", "it": "Formazione ed esperienza"},
     "t_contact":     {"en": "Contact",                  "it": "Contatti"},
     # intestazioni delle due colonne di Esperienza e formazione
     "col_education":  {"en": "Education",  "it": "Formazione"},

@@ -185,6 +185,18 @@ def header(lang):
 
 PREAMBLE = r"""
 \usepackage{needspace}
+
+%% Metadati del PDF: senza, un motore di ricerca mostra il nome del file al posto
+%% del titolo, e il documento non risulta attribuito a nessuno.
+\hypersetup{
+  pdftitle={PDFTITLE},
+  pdfauthor={Eugenio Lomurno},
+  pdfsubject={PDFSUBJECT},
+  pdfkeywords={generative deep learning, synthetic data, privacy-preserving machine
+    learning, multimodal learning, neural architecture search, healthcare AI,
+    Politecnico di Milano, AIRLab},
+  pdflang={PDFLANG}
+}
 \usepackage{lastpage}   % per il totale delle pagine nel piede
 
 % --- stessa tipografia della prima pagina su tutte le altre ---
@@ -869,7 +881,20 @@ def build(lang, base, preview=True):
                lambda m: "\n{\\fontsize{9pt}{1.35em}\\bodyfont\\color{graytext}" + m.group(1) + "\\par}",
                t)
     t = t.replace(r"\usepackage{academicons}", "% academicons: sostituito da ai-*.pdf")
-    t = t.replace(r"\begin{document}", PREAMBLE + "\n" + r"\begin{document}", 1)
+    meta = {"en": dict(pdftitle="Eugenio Lomurno - Curriculum Vitae",
+                       pdfsubject="Curriculum vitae of Eugenio Lomurno, "
+                                  "postdoctoral fellow at AIRLab, Politecnico di Milano",
+                       pdflang="en"),
+            "it": dict(pdftitle="Eugenio Lomurno - Curriculum Vitae",
+                       pdfsubject="Curriculum vitae di Eugenio Lomurno, "
+                                  "assegnista di ricerca all'AIRLab, Politecnico di Milano",
+                       pdflang="it")}[lang]
+    # sostituzione letterale, non formattazione: PREAMBLE e pieno di % che in LaTeX
+    # aprono un commento e in Python sarebbero segnaposto
+    pre = PREAMBLE
+    for k, v in meta.items():
+        pre = pre.replace(k.upper(), v)
+    t = t.replace(r"\begin{document}", pre + "\n" + r"\begin{document}", 1)
     # via la foto e via l'intestazione della classe, sostituita dalla nostra
     t = t.replace(r"\ifcvphoto\photo[circle,edge,left]{profile.jpg}\fi", "")
     t = t.replace(r"{\hypersetup{urlcolor=darktext}\makecvheader[C]}\hypersetup{urlcolor=myblue}",
