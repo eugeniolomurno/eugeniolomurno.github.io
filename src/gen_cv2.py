@@ -991,7 +991,10 @@ def publish_to(pdf, name):
     dst = os.path.join(DEST, name)
     try:
         if os.path.exists(dst):
-            os.remove(dst)
+            try:
+                os.remove(dst)
+            except PermissionError:
+                pass      # cartella che vieta le cancellazioni: si sovrascrive sul posto
         shutil.copy(pdf, dst)
         return True
     except (PermissionError, OSError) as e:

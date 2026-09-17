@@ -49,6 +49,7 @@ TR = [
     ("BSc in Information Engineering", "Laurea triennale in Ingegneria dell'Informazione"),
     ("Postdoctoral Fellow", "Assegnista di ricerca"),
     (r"PhD Thesis \emph{Cum Laude}", r"Tesi di dottorato \emph{con lode}"),
+    ("Florian Daniel Prize", "Premio Florian Daniel"),
     ("PhD Thesis", "Tesi di dottorato"),
     ("MSc Thesis", "Tesi magistrale"),
     # contesti didattici

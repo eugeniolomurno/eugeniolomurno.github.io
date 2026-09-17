@@ -393,6 +393,10 @@ COMPETITIONS = [
 ]
 
 AWARDS = [
+    {"title": {"en": "Florian Daniel Prize", "it": "Premio Florian Daniel"},
+     "where": {"en": "Politecnico di Milano, 2026", "it": "Politecnico di Milano, 2026"},
+     "paper": "Adversarial and Generative Deep Learning for Data Privacy in Human-Centered Artificial Intelligence",
+     "url": "https://www.politesi.polimi.it/handle/10589/238117"},
     {"title": {"en": "Leonardo Fibonacci Best Paper Award", "it": "Leonardo Fibonacci Best Paper Award"},
      "where": {"en": "11th International Conference on Machine Learning, Optimization and Data Science, 2025",
                "it": "11ª International Conference on Machine Learning, Optimization and Data Science, 2025"},
